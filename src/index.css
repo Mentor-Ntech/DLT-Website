@@ -21,3 +21,7 @@
     scroll-behavior: smooth;
     font-family: Source Sans Pro;
 }
+
+body {
+    background-color: var(--primary-color);
+}
