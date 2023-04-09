@@ -8,6 +8,7 @@ import Seyi from '../assets/Seyi.webp';
 import Shola from '../assets/Shola.webp';
 import Soliu from '../assets/Soliu.webp';
 import step from '../assets/step.png';
+import dltlogo from '../assets/dltlogo.png';
 
 
 
@@ -21,6 +22,7 @@ export default {
     Seyi,
     Shola,
     Soliu,
-    step
+    step,
+    dltlogo
 
 }

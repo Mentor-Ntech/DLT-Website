@@ -1,8 +1,7 @@
 import { images } from '../../images';
 import './Network.scss';
 
-const Network = () => {
-  return (
+  return
   <>
     <div className="ourNetworkCon">
       <div className='title'>
