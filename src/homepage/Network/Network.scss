@@ -32,7 +32,7 @@
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 15px;
     letter-spacing: 0.15em;
 }
@@ -80,7 +80,7 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     img {
         display: none;
     }
@@ -88,7 +88,7 @@
 
 
 
-@media screen and (max-width:450px) {
+@media screen and (max-width:320px) {
     .title > h2 {
         font-size: 14px;
     }
