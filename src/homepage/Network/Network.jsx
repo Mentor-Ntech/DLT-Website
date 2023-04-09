@@ -1,7 +1,8 @@
 import { images } from '../../images';
 import './Network.scss';
 
-  return
+const Network = () => {
+  return (
   <>
     <div className="ourNetworkCon">
       <div className='title'>
@@ -42,5 +43,4 @@ import './Network.scss';
     </>
   )
 }
-
 export default Network
