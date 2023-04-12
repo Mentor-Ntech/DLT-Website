@@ -50,8 +50,7 @@ const Navbar = () => {
                 transition={{ duration: 0.85, ease: "easeOut" }}
                 className="toggleMenu"
               >
-                <div>
-                  <img src={images.logo} alt="" />
+                <div className="container">
                   <GrClose onClick={() => setToggle(false)} />
                 </div>
                 <ul>
