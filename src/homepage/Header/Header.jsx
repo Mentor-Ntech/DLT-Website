@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-import './Header.scss';
-=======
 import "./Header.scss";
 import { images } from "../../images";
 
 import { Link } from "react-router-dom";
->>>>>>> a0ee063afce52c5944816656fbf6a52a28fa28f2
 
 const Header = () => {
   return (
