@@ -13,20 +13,6 @@
 }
 
 * {
-<<<<<<< HEAD
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: Source Sans Pro;
-}
-
-body {
-    background-color: var(--primary-color);
-}
-=======
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -38,6 +24,4 @@ body {
 
 body {
   background-color: var(--primary-color);
-  color: white;
 }
->>>>>>> a0ee063afce52c5944816656fbf6a52a28fa28f2
