@@ -1,5 +1,6 @@
 .sectionAbout {
   // padding: 3rem 2rem;
+  background-color: var(--primary-color);
 
   .aboutCon {
     display: flex;
@@ -22,8 +23,8 @@
   h5 {
     position: absolute;
     left: 22%;
-    top: 208%;
-    width: 76%;
+    top: 186%;
+    width: 75%;
   }
 
   p {

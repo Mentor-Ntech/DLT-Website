@@ -3,7 +3,20 @@ import { images } from '../../images';
 import { AiOutlineTwitter } from "react-icons/ai";
 import { ImLinkedin2, ImFacebook } from "react-icons/im";
 
-
+const socials = [
+  {
+    icon: <AiOutlineTwitter />,
+    link: 'https://www.twitter.com/'
+  },
+  {
+    icon: <ImFacebook />,
+    link: 'https://www.facebook.com/'
+  },
+  { 
+    icon: <ImLinkedin2 />,
+    link: 'https://www.LinkedIn.com/'
+  },
+]
 
 const Footer = () => {
     return (
@@ -76,21 +89,13 @@ const Footer = () => {
 
                             <div className='footerIcon'>
                                 <ul className='item'>
-                                    <li className='itemLink'>
-                                        <a href="https://www.twitter.com/in/phuong-hoang-a0b4901a5/" target='_blank' rel='noreferrer'>
-                                            <h3><AiOutlineTwitter color='#1e90ff' /></h3>
-                                        </a>
-                                    </li>
-                                    <li className='itemLink'>
-                                        <a href="https://www.facebook.com/in/phuong-hoang-a0b4901a5/" target='_blank' rel='noreferrer'>
-                                            <h3><ImFacebook color='blue' /></h3>
-                                        </a>
-                                    </li>
-                                    <li className='itemLink'>
-                                        <a href="https://www.linkdin.com/in/phuong-hoang-a0b4901a5/" target='_blank' rel='noreferrer'>
-                                            <h3><ImLinkedin2 color='#291fd3' /></h3>
-                                        </a>
-                                    </li>
+                                {socials.map((social, i) => (
+                                  <li key={i} className='itemLink'>
+                                    <a href={social.link}>
+                                      {social.icon}
+                                    </a>
+                                  </li>
+                                ))}
 
                                 </ul>
                             </div>

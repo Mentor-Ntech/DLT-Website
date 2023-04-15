@@ -102,12 +102,12 @@
 
 .footer {
     background-color: var(--black-color);
-    width: 100vw;
+    width: 100%;
+    padding: 3rem;
 
     .footCon {
         display: flex;
         align-items: center;
-        border: 2px solid red;
         column-gap: 25rem;
 
         .contactInfo a {
@@ -150,7 +150,7 @@
 
     .footerText {
         // margin-left: 2rem;
-        padding-left: 3rem;
+       
 
         h2 {
             margin-bottom: 1rem;
@@ -182,19 +182,27 @@
     }
 
     .itemLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         list-style: none;
         background-color: var(--white-color);
         height: 45px;
         width: 45px;
         color: black;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         border-radius: 50%;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+
+        a {
+            color: aqua;
+
+            svg {
+                font-size: 15px;
+            }
+        }
     }
 
     .footerImg {
