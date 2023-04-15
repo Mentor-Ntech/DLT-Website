@@ -1,61 +1,55 @@
 .sectionAbout {
-    // padding: 3rem 2rem;
+  // padding: 3rem 2rem;
 
+  .aboutCon {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+  }
 
+  h2 {
+    padding: 3rem 0 2rem 2.9rem;
+  }
+
+  img {
+    position: relative;
+    height: 500px;
+    width: 600px;
+    top: 20px;
+    right: 10px;
+  }
+
+  h5 {
+    position: absolute;
+    left: 22%;
+    top: 208%;
+    width: 76%;
+  }
+
+  p {
+    padding: 0 0 0 2rem;
+    margin-bottom: 1rem;
+  }
+
+  @media screen and(max-width:1200px) {
     .aboutCon {
-        display: flex;
-        justify-content: center;
-        padding: 3rem;
-
-    }
-
-    h2 {
-        padding: 3rem 0 2rem 2.9rem;
-
+      display: flex;
+      justify-content: center;
     }
 
     img {
-        position: relative;
-        height: 500px;
-        width: 600px;
-        top: 20px;
-        right: 10px;
+      position: relative;
+      height: 500px;
+      width: 600px;
+      top: 20px;
+      right: 10px;
     }
-
-    .aboutPlay {}
 
     h5 {
-        position: absolute;
-        left: 22%;
-        bottom: 1%;
+      position: relative;
+      left: 25%;
+      top: -60px;
+      width: 75%;
     }
-
-    p {
-        padding: 0 0 0 2rem;
-        margin-bottom: 1rem;
-    }
-
-
-    @media screen and(max-width:1200px) {
-        .aboutCon {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        img {
-            position: relative;
-            height: 500px;
-            width: 600px;
-            top: 20px;
-            right: 10px;
-        }
-
-        h5 {
-            position: relative;
-            left: 25%;
-            top: -60px;
-            width: 75%;
-        }
-    }
+  }
 }

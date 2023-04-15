@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="navbarCon">
         <div className="navbarLogo">
           <a href="/">
-            <img src={images.logo} alt="DLT Africa logo" />
+            <img src={images.dltlogo} alt="DLTAfrica logo" />
           </a>
         </div>
 

@@ -1,116 +1,106 @@
-.ourNetworkCon{
-    background-color: var(--light-color);
+.ourNetworkCon {
+  background-color: var(--light-color);
 }
 
 .title {
-    font-family: Source Sans Pro;
-    font-size: 22px;
-    padding-bottom: 2rem;
-    margin: 0 3rem;
-    padding-top: 5rem;
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  padding-bottom: 2rem;
+  margin: 0 3rem;
+  padding-top: 5rem;
 }
 
 .title > h2 {
-    margin-bottom: 2rem;
-    color: var(--honey-color);
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0.15em;
+  margin-bottom: 2rem;
+  color: var(--honey-color);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
 }
 
 .title > h4 {
-    margin-bottom: 0.9rem;
-    font-size: 32px;
-    line-height: 1.1;
-    letter-spacing: 1px
+  margin-bottom: 0.9rem;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: 1px;
 }
 
-.paragraph > p{
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 15px;
-    letter-spacing: 0.15em;
+.paragraph > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
 }
 
 .joinCon {
-    margin: 3rem ;
-    background-color: #e4ffe8;
-    border-radius: 10px;
+  margin: 3rem;
+  background-color: #e4ffe8;
+  border-radius: 10px;
 }
 .joinCon2 {
-    padding: 3rem ;
+  padding: 3rem;
 }
-
 
 .joinCon > h2 {
-    font-family: 'Source Sans Pro';
-    margin-bottom: 2rem;
-    color: var(--honey-color);
+  font-family: "Source Sans Pro";
+  margin-bottom: 2rem;
+  color: var(--honey-color);
 }
 
-.pContent{
-    margin-top: 1rem;
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0.15em;
+.pContent {
+  margin-top: 1rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
 }
 
 .joinCon2 > h2 {
-    // margin-bottom: 2rem;
-    color: var(--honey-color);
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 18px;
-    letter-spacing: 0.15em;
-}
-
-
-.networkImg{
-    margin-top: 8rem;
-    font-size: 1.2rem;
+  // margin-bottom: 2rem;
+  color: var(--honey-color);
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 18px;
+  letter-spacing: 0.15em;
 }
 
 @media screen and (max-width: 768px) {
-    img {
-        display: none;
-    }
+  .joinCon img {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 320px) {
+  .title > h2 {
+    font-size: 14px;
+  }
 
+  .title > h4 {
+    font-size: 22px;
+  }
 
-@media screen and (max-width:320px) {
-    .title > h2 {
-        font-size: 14px;
-    }
+  .title > p {
+    font-size: 12px;
+  }
 
-    .title > h4 {
-        font-size: 22px;
-    }
+  .joinCon img {
+    display: none;
+  }
 
-    .title > p {
-        font-size: 12px;
-    }
+  .joinCon2 > h2 {
+    font-size: 14px;
+  }
 
-    img{
-        display: none;
-      }
-
-    .joinCon2 > h2 {
-        font-size: 14px;
-    }
-
-    .pContent {
-        font-size: 12px;
-    }
+  .pContent {
+    font-size: 12px;
+  }
 }
-
