@@ -1,217 +1,160 @@
-// .footer {
-//     background-color: var(--black-color);
-//     height: 100vh;
-//     width: 100vw;
-//     max-width: 80rem;
-//     overflow-x: hidden;
-
-
-//     .footCon {
-//         display: grid;
-//         grid-template-columns: 70% 30%;
-//         gap: 3rem;
-//         margin-top: 5rem;
-//         margin-left: 4rem;
-
-//     }
-
-//     .infoDtl {
-//         color: var(--white-color);
-//         margin-bottom: .5rem;
-//     }
-
-//     .contactInfo a {
-//         text-decoration: none;
-//         color: var(--white-color);
-//         line-height: 1.1;
-//         letter-spacing: 1px;
-//         // margin-bottom: 2rem;
-
-//     }
-
-//     .contactUs {
-//         margin-top: 2rem;
-//     }
-
-
-//     .followDlt {
-//         margin-top: 2rem;
-//         font-weight: 700;
-//         color: var(--white-color);
-//     }
-
-//     .footerIcon {
-//         width: 10%;
-//         margin-top: 2rem;
-//     }
-
-//     .item {
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr;
-//         gap: 1rem;
-//         // margin: 1rem 1rem;
-//         // width: auto;
-//     }
-
-//     .itemLink {
-//         list-style: none;
-//         background-color: var(--white-color);
-//         height: 45px;
-//         width: 45px;
-//         color: black;
-//         align-items: center;
-//         display: flex;
-//         justify-content: center;
-//         border-radius: 50%;
-//         -webkit-border-radius: 50%;
-//         -moz-border-radius: 50%;
-//         -ms-border-radius: 50%;
-//         -o-border-radius: 50%;
-//     }
-//     .footerImage {
-//         height: 350px;
-//         width: 350px;
-//         animation: myRotate 5s ease 0s infinite;
-//         -webkit-animation: myRotate 5s ease 0s infinite;
-//     }
-//     .footerImg {
-//         height: 350px;
-//         width: 350px;
-
-//     }
-
-//     .dltLOGO {
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         gap: 0.2rem;
-//     }
-
-//     .dltImg{
-//         width: 100px;
-//     }
-
-//     .dltLoText {
-//         color: #919692;
-//         position: relative;
-//         left: 1%;
-//         bottom: 20%;
-//         // bottom: 70%;
-//     }    
-
-// }
-
 .footer {
-    background-color: var(--black-color);
-    width: 100%;
-    padding: 3rem;
+  background-color: var(--black-color);
+  padding: 5rem 3rem;
 
-    .footCon {
-        display: flex;
-        align-items: center;
-        column-gap: 25rem;
+  .footCon {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
 
-        .contactInfo a {
-            text-decoration: none;
-            color: var(--light-color);
-            line-height: 1.1;
-            letter-spacing: 1px;
-            
-            span{
-                font-weight: 700;
-                color: var(--light-color);
-            }
-            small{
-                color: var(--light-color);
-                letter-spacing: 1px;
-                font-size: 15px;
-                font-weight: 300;
-                margin-left: .2rem;
-                
-            }
-        }
-    
-        .reachOut {
-            margin-top: 3rem;
+    .contactInfo a {
+      text-decoration: none;
+      color: var(--light-color);
+      line-height: 1.1;
+      letter-spacing: 1px;
+      
 
-            h4{
-                letter-spacing: 0.5px;
-                font-size: 1.2rem; 
-                font-weight: 700;
-                padding-bottom: 1rem;
-            }
-
-            h5{
-                color: var(--white-color);
-                font-weight: 800;
-            }
-        }
- 
+      span {
+        font-weight: 700;
+        color: var(--light-color);
+      }
+      small {
+        color: var(--light-color);
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 0.2rem;
+      }
     }
 
-    .footerText {
-        // margin-left: 2rem;
-       
+    .reachOut {
+      margin-top: 3rem;
 
-        h2 {
-            margin-bottom: 1rem;
-            color: var(--white-color);
-            font-weight: 700;
-            font-size: 15px;
-        }
+      h4 {
+        letter-spacing: 0.5px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+      }
 
-    }
-
-
-    h4 {
-        color: aliceblue;
-
-    }
-
-
-    .footerIcon {
-        width: 10%;
-        margin-top: 2rem;
-    }
-
-    .item {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1rem;
-        // margin: 1rem 1rem;
-        // width: auto;
-    }
-
-    .itemLink {
-        display: flex;
+      .outSp {
+        color: #f5f7f6;
         align-items: center;
         justify-content: center;
-        list-style: none;
-        background-color: var(--white-color);
-        height: 45px;
-        width: 45px;
-        color: black;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
+        font-size: 20px;
+        font-weight: 300;
+      }
 
-        a {
-            color: aqua;
+      h5 {
+        color: var(--white-color);
+        font-weight: 800;
+      }
+    }
+  }
 
-            svg {
-                font-size: 15px;
-            }
-        }
+  .footerText {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--white-color);
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+
+  h4 {
+    color: #f5f7f6;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+  }
+
+  .footerIcon {
+    width: 10%;
+    margin-top: 2rem;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    // margin: 1rem 1rem;
+    // width: auto;
+  }
+
+  .itemLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: var(--white-color);
+    height: 45px;
+    width: 45px;
+    color: black;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    a {
+      color: #3535ed;
+
+      svg {
+        font-size: 15px;
+      }
     }
 
-    .footerImg {
+    
+  }
 
-        // width: 100%;
-        img {
-            height: 350px;
-            width: 350px;
-        }
+  .footerImg {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      animation: move 30s linear infinite;
+      -webkit-animation: move 30s linear infinite;
+      height: 30rem;
+      width: 30rem;
     }
 
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+  }
+
+  .dltLogo {
+    height: 250px;
+    width: 350px;
+    height: 60%;
+
+    img {
+      height: 90px;
+      width: 101px;
+    }
+
+    p {
+      color: #919692;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+}
+}
+@keyframes move {
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
 }

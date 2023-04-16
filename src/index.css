@@ -23,6 +23,19 @@
 }
 
 body {
-  /* background-color: var(--primary-color); */
+  background-color: var(--primary-color);
   overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+  width: 100vw;
+}
+
+@media screen and (min-width: 2000px) {
+  .container {
+    max-width: 2030px;
+    width: 100%;
+  }
 }

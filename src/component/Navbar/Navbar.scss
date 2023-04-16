@@ -2,8 +2,7 @@
   background-color: var(--primary-color);
   letter-spacing: 1px;
   font-size: 1.3rem;
-  padding: 0 3rem;
-  width: 100%;
+  padding: 0 1rem;
   position: fixed;
   z-index: 2;
 
@@ -15,8 +14,8 @@
   }
 
   img {
-    width: 80px;
-    height: 65px;
+    height: 75px;
+    width: 90px;
 
     @media screen and (min-width: 2000px) {
       height: 110px;
@@ -73,7 +72,7 @@
   }
 
   @media screen and (max-width: 912px) {
-    padding: 0 3.5rem 0 0;
+    padding: 0 1.5rem 0 0;
   }
 }
 

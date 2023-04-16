@@ -3,8 +3,7 @@ import "./Network.scss";
 
 const Network = () => {
   return (
-    <>
-      <div className="ourNetworkCon">
+      <section className="ourNetworkCon container">
         <div className="title">
           <h2>OUR NETWORK</h2>
           <h4>
@@ -44,8 +43,7 @@ const Network = () => {
 
           <img src={images.happy} alt="" />
         </div>
-      </div>
-    </>
+      </section>
   );
 };
 export default Network;

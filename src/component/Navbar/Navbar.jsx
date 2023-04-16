@@ -24,7 +24,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar container">
       <div className="navbarCon">
         <div className="navbarLogo">
           <a href="/">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 transition={{ duration: 0.85, ease: "easeOut" }}
                 className="toggleMenu"
               >
-                <div className="container">
+                <div>
                   <GrClose onClick={() => setToggle(false)} />
                 </div>
                 <ul>

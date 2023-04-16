@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header container">
       <div className="containerLeft">
         <h1>
           Corem ipsum dolor sit amet, <span>consectetur adipiscing elit.</span>
