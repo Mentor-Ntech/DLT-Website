@@ -38,7 +38,12 @@
         margin-bottom: 3rem;
 
         @media screen and (min-width: 2000px) {
-            font-size: 55px;
+            font-size: 60px;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 1200px) {
+            font-size: 80px;
             margin-bottom: 2rem;
         }
 

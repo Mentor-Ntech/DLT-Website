@@ -1,7 +1,8 @@
 import "./Footer.scss";
 import { images } from "../../images";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { ImLinkedin2, ImFacebook } from "react-icons/im";
+import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
+
 
 const socials = [
   {
@@ -9,11 +10,11 @@ const socials = [
     link: "https://www.twitter.com/",
   },
   {
-    icon: <ImFacebook />,
+    icon: <AiFillFacebook />,
     link: "https://www.facebook.com/",
   },
   {
-    icon: <ImLinkedin2 />,
+    icon: <AiFillLinkedin />,
     link: "https://www.LinkedIn.com/",
   },
 ];
@@ -26,21 +27,21 @@ const Footer = () => {
           <h2 className="pText">Contact info:</h2>
           <div className="contactInfo">
             <a
-              href="dtlAfrica@gmail.com"
+              href="info@dltafrica.io"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>Email address:</span>
-              <small> dtlAfrica@gmail.com</small>
+              <small>info@dltafrica.io</small>
             </a>
             <br />
             <a
-              href="tel:+2348133085555"
+              href="tel:+2348156509701"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>Phone number:</span>
-              <small> +234 813 308 5555</small>
+              <small> +234 815 650 9701</small>
             </a>
           </div>
           <div className="reachOut">

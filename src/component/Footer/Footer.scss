@@ -14,6 +14,7 @@
       letter-spacing: 1px;
       
 
+
       span {
         font-weight: 700;
         color: var(--light-color);
@@ -101,10 +102,10 @@
     -o-border-radius: 50%;
 
     a {
-      color: #3535ed;
+      color: var(--black-color);
 
       svg {
-        font-size: 15px;
+        font-size: 25px;
       }
     }
 
@@ -147,6 +148,13 @@
 
   @media screen and (max-width: 480px) {
     font-size: 10px;
+}
+
+@media screen and (max-width: 360px) {
+  font-size: 10px;
+  width: 100%;
+  overflow: hidden;
+
 }
 }
 @keyframes move {
