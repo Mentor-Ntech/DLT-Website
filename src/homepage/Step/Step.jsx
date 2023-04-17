@@ -3,7 +3,6 @@ import {images} from '../../images'
 
 const Step = () => {
   return (
-    
     <section className='sectionStep'>
       <h2 className='stepHeading'>
       Jorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -23,7 +22,6 @@ const Step = () => {
           <img src={images.step} alt=""/>
       </div>
     </section>
-
   )
 }
 

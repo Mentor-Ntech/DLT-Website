@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
 
 :root {
-    --primary-color: #123c2f;
-    --secondary-color: #44e38d;
-    --light-color: #eeeeee;
-    --white-color: #f5f7f6;
-    --honey-color: #d94f70;
-    --dark-color: #333934;
-    --black-color: #06241b;
+  --primary-color: #123c2f;
+  --secondary-color: #44e38d;
+  --light-color: #eeeeee;
+  --white-color: #f5f7f6;
+  --honey-color: #d94f70;
+  --dark-color: #333934;
+  --black-color: #06241b;
 
-    --light-secondary-color: #e4ffe8;
+  --light-secondary-color: #e4ffe8;
 }
 
 * {
@@ -25,3 +25,29 @@
 body {
     background-color: var(--primary-color);
  } 
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Source Sans Pro;
+}
+
+body {
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin-inline: auto;
+  width: 100vw;
+}
+
+@media screen and (min-width: 2000px) {
+  .container {
+    max-width: 2030px;
+    width: 100%;
+  }
+}

@@ -1,49 +1,46 @@
 .appFlex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pText {
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    color: var(--white-color);
-} 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: var(--white-color);
+}
 
 h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.2;
-    color: var(--secondary-color);
-    letter-spacing: 0.8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+  color: var(--secondary-color);
+  letter-spacing: 0.8px;
 }
 
 h3 {
-    font-family: Source Sans Pro;
-    font-size: 22px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    color: var(--honey-color);
+  font-family: Source Sans Pro;
+  font-size: 22px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: var(--honey-color);
 }
 
 .genBtn {
-    transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 
+  background-color: #1d700e;
+  color: #c5cdc7;
 
-    background-color: #1d700e;
-    color: #c5cdc7;
-
-    &:hover{
-        background-color: var(--secondary-color);
-        color: var(--black-color);
-      
-    }
-
+  &:hover {
+    background-color: #175c0a;
+  }
 }
+
 
