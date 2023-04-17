@@ -1,4 +1,5 @@
 import './About.scss';
+import {images} from '../../images'
 
 const About = () => {
   return (
@@ -9,3 +10,4 @@ const About = () => {
 }
 
 export default About
+
