@@ -1,10 +1,4 @@
 import './About.scss';
-import { images } from '../../images';
-
-const listText = [
-  'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nam facilis nesciunt harum alias voluptatum magnam quam odio amet consequatur autem, sint corrupti veritatis nihil.',
-  'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis nam facilis nesciunt harum alias voluptatum magnam quam odio amet consequatur autem, sint corrupti veritatis nihil.',
-]
 
 const About = () => {
   return (
@@ -56,3 +50,4 @@ const About = () => {
 }
 
 export default About
+

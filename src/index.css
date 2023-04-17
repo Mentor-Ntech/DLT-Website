@@ -13,6 +13,18 @@
 }
 
 * {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Source Sans Pro;
+}
+
+body {
+    background-color: var(--primary-color);
+ } 
   box-sizing: border-box;
   outline: none;
   border: none;

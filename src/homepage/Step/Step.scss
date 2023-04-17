@@ -1,0 +1,104 @@
+.sectionStep {
+    padding: 3rem 0 3rem 3rem;
+
+    @media screen and (min-width: 2000px) {
+        padding: 3rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        padding: 3rem;
+    }
+
+    .stepCon {
+        display: flex;
+        row-gap: 1.5rem;
+
+    .stepText {
+        height: 100%;
+    }
+
+        p {
+            line-height: 1.2;
+
+            @media screen and (min-width: 2000px) {
+                font-size: 60px;
+            }
+            @media screen and (max-width: 1024px) {
+                font-size: 25px;
+            }
+
+            @media screen and (max-width: 900px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .stepHeading {
+        margin-bottom: 3rem;
+
+        @media screen and (min-width: 2000px) {
+            font-size: 55px;
+            margin-bottom: 2rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 900px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 360px) {
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            span {
+                color: white;
+            }
+        }
+
+      
+    }
+   
+    img {
+        @media screen and (min-width: 2000px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 1024px) {
+            width: 45%;
+        }
+
+        @media screen and (max-width: 768px) {
+            width: 30%;
+        }
+
+        @media screen and (max-width: 600px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
+        @media screen and (max-width: 450px) {
+            display: none;
+            
+        }
+        @media screen and (max-width: 480px) {
+            display: none;
+
+        }
+    }
+}
+
+
