@@ -10,8 +10,10 @@ const Header = () => {
         <h1>
           Corem ipsum dolor sit amet, <span>consectetur adipiscing elit.</span>
         </h1>
-        <div className="btn genBtn">
-          <Link to="/join">Apply Now</Link>
+        <div>
+          <Link className="btn genBtn" to="/join">
+            Apply Now
+          </Link>
         </div>
       </div>
       <div className="containerRight">

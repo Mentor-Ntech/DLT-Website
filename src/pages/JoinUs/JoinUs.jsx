@@ -8,6 +8,7 @@ import { client } from "../../client";
 
 const JoinUs = () => {
   const [success, setSuccess] = useState(false);
+  const [errMsg, setErrMsg] = useState(false);
 
   //   schema that will validate form inputs
   const schema = yup.object().shape({
@@ -105,7 +106,13 @@ const JoinUs = () => {
       .then(() => {
         setSuccess(true);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        if (!err?.res) {
+          setErrMsg("No server response");
+        } else {
+          setErrMsg("Registration failed");
+        }
+      });
 
     return result;
   };
@@ -120,6 +127,12 @@ const JoinUs = () => {
           </div>
 
           <div className="formContainer">
+            <p
+              className={errMsg ? "errMsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {errMsg}
+            </p>
             <form onSubmit={handleSubmit(onSubmit)}>
               <article>
                 <div>
