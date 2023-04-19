@@ -8,22 +8,8 @@ import { client } from "../../client";
 
 const JoinUs = () => {
   const [success, setSuccess] = useState(false);
-  //   const [formData, setFormData] = useState({
-  //     firstname: "",
-  //     lastname: "",
-  //     stateOfOrigin: "",
-  //     gender: "",
-  //     dob: "",
-  //     phoneNumber: "",
-  //     AcadQual: "",
-  //     email: "",
-  //     exp: "",
-  //     html: "",
-  //     css: "",
-  //     javascript: "",
-  //     other: "",
-  //   });
 
+  //   schema that will validate form inputs
   const schema = yup.object().shape({
     firstname: yup
       .string()
@@ -84,6 +70,7 @@ const JoinUs = () => {
     other: yup.string(),
   });
 
+  // destructuring the form data using react-hook-form
   const {
     register,
     handleSubmit,
@@ -92,22 +79,7 @@ const JoinUs = () => {
     resolver: yupResolver(schema),
   });
 
-  //   const {
-  //     firstname,
-  //     lastname,
-  //     stateOfOrigin,
-  //     gender,
-  //     dob,
-  //     phoneNumber,
-  //     AcadQual,
-  //     email,
-  //     exp,
-  //     html,
-  //     css,
-  //     javascript,
-  //     other,
-  //   } = formData;
-
+  // the function that will triggered the form submission
   const onSubmit = async (data) => {
     console.log(data);
 
