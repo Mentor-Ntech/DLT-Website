@@ -56,7 +56,9 @@ const Navbar = () => {
                 <ul>
                   {navItems.map(({ title, id, path }) => (
                     <li key={id}>
-                      <Link to={path}>{title}</Link>
+                      <Link to={path} onClick={() => setToggle(false)}>
+                        {title}
+                      </Link>
                     </li>
                   ))}
                 </ul>

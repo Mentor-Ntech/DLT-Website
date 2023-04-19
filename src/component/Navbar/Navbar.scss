@@ -11,15 +11,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
 
-  img {
-    height: 75px;
-    width: 90px;
+    .navbarLogo {
+      margin-left: 1rem;
 
-    @media screen and (min-width: 2000px) {
-      height: 110px;
-      width: 110px;
+      img {
+        height: 75px;
+        width: 90px;
+
+        @media screen and (min-width: 2000px) {
+          height: 110px;
+          width: 110px;
+        }
+      }
     }
   }
 
@@ -79,6 +83,7 @@
 .navbarMenu {
   height: 35px;
   width: 35px;
+  margin-right: 1rem;
   position: relative;
   border-radius: 50%;
   -webkit-border-radius: 50%;

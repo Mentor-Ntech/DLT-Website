@@ -1,0 +1,132 @@
+.joinUs {
+  color: var(--white-color);
+  padding: 8rem 3rem;
+
+  .formContainer {
+    background: #e4ffe8;
+    color: #5d635e;
+    max-width: 964px;
+    padding: 5rem;
+    margin: 5rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      label {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 20px;
+      }
+
+      input,
+      select {
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+
+        border-radius: 7.23px;
+        -webkit-border-radius: 7.23px;
+        -moz-border-radius: 7.23px;
+        -ms-border-radius: 7.23px;
+        -o-border-radius: 7.23px;
+
+        width: 333px;
+        padding: 0.7rem;
+        font-size: 16px;
+        font-weight: 600;
+        background: #ffffff;
+        border: 1.2px solid #c5cdc7;
+
+        &:hover {
+          border: 1.2px solid var(--primary-color);
+        }
+      }
+    }
+
+    aside {
+      margin-top: 5rem;
+      text-transform: lowercase;
+      text-transform: capitalize;
+      width: 100%;
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      label,
+      input {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+      }
+
+      input {
+        margin-right: 0.3rem;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .btnCon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      color: #e4ffe8;
+      height: 65px;
+      width: 150px;
+      border-radius: 5px;
+      padding: 11px;
+      font-weight: 400;
+      font-size: 18.3644px;
+      line-height: 22px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+
+  .errMsg {
+    color: red;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .instruction {
+    background: var(--primary-color);
+    color: var(--white-color);
+    width: 85%;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .offscreen {
+    display: none;
+  }
+}
