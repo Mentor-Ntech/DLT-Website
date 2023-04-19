@@ -18,46 +18,134 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1.5rem;
+      place-content: center;
 
       div {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-      }
 
-      label {
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400px;
-        line-height: 20px;
-      }
+        label {
+          text-transform: uppercase;
+          font-size: 16px;
+          font-weight: 400px;
+          line-height: 20px;
 
-      input,
-      select {
-        transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
+          @media screen and (min-width: 2000px) {
+            font-size: 30px;
+            font-weight: 600px;
+            line-height: 25px;
+          }
+        }
 
-        border-radius: 7.23px;
-        -webkit-border-radius: 7.23px;
-        -moz-border-radius: 7.23px;
-        -ms-border-radius: 7.23px;
-        -o-border-radius: 7.23px;
+        input,
+        select {
+          transition: all 0.5s ease-in-out;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
 
-        width: 333px;
-        padding: 0.7rem;
-        font-size: 16px;
-        font-weight: 600;
-        background: #ffffff;
-        border: 1.2px solid #c5cdc7;
+          border-radius: 7.23px;
+          -webkit-border-radius: 7.23px;
+          -moz-border-radius: 7.23px;
+          -ms-border-radius: 7.23px;
+          -o-border-radius: 7.23px;
 
-        &:hover {
-          border: 1.2px solid var(--primary-color);
+          width: 333px;
+          padding: 0.7rem;
+          font-size: 16px;
+          font-weight: 600;
+          background: #ffffff;
+          border: 1.2px solid #c5cdc7;
+
+          &:hover {
+            border: 1.2px solid var(--primary-color);
+          }
+
+          @media screen and (min-width: 2000px) {
+            width: 600px;
+            padding: 1rem;
+            font-size: 35px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            width: 390px;
+          }
+
+          @media screen and (max-width: 1024px) {
+            width: 360px;
+          }
+
+          @media screen and (max-width: 900px) {
+            width: 310px;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 250px;
+          }
+
+          @media screen and (max-width: 600px) {
+            width: 340px;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 320px;
+          }
+
+          @media screen and (max-width: 375px) {
+            width: 290px;
+          }
+
+          @media screen and (max-width: 320px) {
+            width: 260px;
+          }
+        }
+
+        @media screen and (min-width: 2000px) {
+          gap: 1.8rem;
         }
       }
+
+      @media screen and (min-width: 2000px) {
+        gap: 2rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
     }
+
+    @media screen and (min-width: 2000px) {
+      max-width: 1650px;
+      margin: 3rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      max-width: 1054px;
+      margin: 2rem;
+    }
+
+    @media screen and (max-width: 900px) {
+      max-width: 1200px;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 1300px;
+      margin: 1rem 0 1rem 0;
+    }
+
+    @media screen and (max-width: 480px) {
+      max-width: 1000px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
 
     aside {
       margin-top: 5rem;
@@ -73,17 +161,25 @@
       input {
         text-transform: capitalize;
         margin-bottom: 1rem;
+
+        @media screen and (min-width: 2000px) {
+          margin-bottom: 2rem;
+        }
       }
 
-      input {
+      input[type="checkbox"] {
         margin-right: 0.3rem;
+
+        @media screen and (min-width: 2000px) {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+
+      @media screen and (min-width: 2000px) {
+        font-size: 35px;
       }
     }
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
 
     .btnCon {
       display: flex;
@@ -93,8 +189,8 @@
 
     button {
       color: #e4ffe8;
-      height: 65px;
-      width: 150px;
+      height: 45px;
+      width: 110px;
       border-radius: 5px;
       padding: 11px;
       font-weight: 400;
@@ -102,6 +198,13 @@
       line-height: 22px;
       text-align: center;
       margin-top: 2rem;
+
+      @media screen and (min-width: 2000px) {
+        height: 95px;
+        width: 210px;
+        font-size: 35px;
+        padding: 22px;
+      }
     }
   }
 
@@ -111,11 +214,16 @@
     text-align: center;
     font-size: 18px;
     font-weight: 600;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 35px;
+    }
   }
 
   .instruction {
     background: var(--primary-color);
     color: var(--white-color);
+    margin-top: 0.5rem;
     width: 85%;
     letter-spacing: 1px;
     padding: 0.5rem;
@@ -124,9 +232,35 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+      width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   .offscreen {
     display: none;
+  }
+
+  @media screen and (min-width: 2000px) {
+    padding: 12rem 5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 6rem 1.2rem;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .joinUs .headerText h2 {
+    font-size: 4rem;
+  }
+
+  .joinUs .headerText small {
+    font-size: 2rem;
   }
 }
