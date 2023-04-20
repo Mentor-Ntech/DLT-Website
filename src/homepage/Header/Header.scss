@@ -30,7 +30,7 @@
       font-size: 38px;
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 912px) {
       font-size: 30px;
       line-height: 28px;
       letter-spacing: 0.1em;
@@ -135,8 +135,8 @@
     height: auto;
   }
 
-  @media screen and (max-width: 900px) {
-    padding-bottom: 0;
+  @media screen and (max-width: 912px) {
+    height: 40vh;
   }
 }
 
