@@ -127,12 +127,6 @@ const JoinUs = () => {
           </div>
 
           <div className="formContainer">
-            <p
-              className={errMsg ? "errMsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {errMsg}
-            </p>
             <form onSubmit={handleSubmit(onSubmit)}>
               <article>
                 <div>
@@ -296,6 +290,12 @@ const JoinUs = () => {
                 <button className="genBtn">Submit</button>
               </div>
             </form>
+            <p
+              className={errMsg ? "errMsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {errMsg}
+            </p>
           </div>
         </>
       ) : (

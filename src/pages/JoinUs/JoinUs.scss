@@ -86,19 +86,31 @@
           }
 
           @media screen and (max-width: 600px) {
-            width: 340px;
+            width: 220px;
+          }
+
+          @media screen and (max-width: 512px) {
+            width: 200px;
           }
 
           @media screen and (max-width: 480px) {
-            width: 320px;
+            width: 330px;
+          }
+
+          @media screen and (max-width: 412px) {
+            width: 280px;
           }
 
           @media screen and (max-width: 375px) {
-            width: 290px;
+            width: 250px;
           }
 
           @media screen and (max-width: 320px) {
-            width: 260px;
+            width: 230px;
+          }
+
+          @media screen and (max-width: 280px) {
+            width: 200px;
           }
         }
 
@@ -111,7 +123,7 @@
         gap: 2rem;
       }
 
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 480px) {
         grid-template-columns: 1fr;
       }
     }
@@ -126,7 +138,7 @@
       margin: 2rem;
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 912px) {
       max-width: 1200px;
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -136,10 +148,6 @@
     @media screen and (max-width: 768px) {
       max-width: 1300px;
       margin: 1rem 0 1rem 0;
-    }
-
-    @media screen and (max-width: 480px) {
-      max-width: 1000px;
     }
   }
 
@@ -179,6 +187,10 @@
       @media screen and (min-width: 2000px) {
         font-size: 35px;
       }
+
+      @media screen and (max-width: 280px) {
+        margin-top: 2rem;
+      }
     }
 
     .btnCon {
@@ -205,12 +217,18 @@
         font-size: 35px;
         padding: 22px;
       }
+
+      @media screen and (max-width: 280px) {
+        font-size: 16px;
+        height: 45px;
+        width: 80px;
+      }
     }
   }
 
   .errMsg {
     color: red;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -221,8 +239,8 @@
   }
 
   .instruction {
-    background: var(--primary-color);
-    color: var(--white-color);
+    color: red;
+    font-weight: 600;
     margin-top: 0.5rem;
     width: 85%;
     letter-spacing: 1px;
@@ -252,6 +270,10 @@
 
   @media screen and (max-width: 768px) {
     padding: 6rem 1.2rem;
+  }
+
+  @media screen and (max-width: 280px) {
+    font-size: 12px;
   }
 }
 
