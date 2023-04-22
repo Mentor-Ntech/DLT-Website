@@ -7,7 +7,7 @@ const Network = () => {
         <div className="title">
           <h2>OUR NETWORK</h2>
           <h4>
-            jorem ipsum dolor sit amet, <br />
+            Jorem ipsum dolor sit amet, <br />
             consectetur adipiscing elit.
           </h4>
           <div className="paragraph">
@@ -41,7 +41,9 @@ const Network = () => {
             </p>
           </div>
 
-          <img src={images.happy} alt="" />
+          <div className="networkPic">
+            <img src={images.happy} alt="image" />
+          </div>
         </div>
       </section>
   );

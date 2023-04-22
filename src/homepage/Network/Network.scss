@@ -1,7 +1,6 @@
 .ourNetworkCon {
   background-color: var(--light-color);
-  padding: 4rem 3rem;
-
+  padding: 4rem 0;
 }
 
 .title {
@@ -64,7 +63,7 @@
 }
 
 .joinCon2 > h2 {
-  // margin-bottom: 2rem;
+  // margin-bottom: 2rem
   color: var(--honey-color);
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -75,14 +74,57 @@
 }
 
 @media screen and (max-width: 768px) {
-  .joinCon img {
+  .networkPic {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .joinCon2 > h2 {
+    font-size: 22px;
+  }
+  .pContent {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .title > h4 {
+    font-size: 14px;
+  }
+
+  .paragraph > p {
+    font-style: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+
+  .pContent {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .joinCon2 > h2 {
+    font-size: 16px;
+  }
+
+  .joinCon {
+    // margin: 3rem 3rem 0 3rem;
+    background-color: #e4ffe8;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .joinCon2 {
+    padding: 2rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .title > h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .title > h4 {
@@ -93,7 +135,7 @@
     font-size: 12px;
   }
 
-  .joinCon img {
+  .networkPic {
     display: none;
   }
 
@@ -103,5 +145,9 @@
 
   .pContent {
     font-size: 12px;
+  }
+
+  .paragraph > p {
+    font-size: 14px;
   }
 }
