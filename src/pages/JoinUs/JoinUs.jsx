@@ -3,6 +3,8 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
+import Congrat from "../Congrat/Congrat";
+import { Navigate } from "react-router-dom";
 
 import { client } from "../../client";
 
@@ -299,7 +301,7 @@ const JoinUs = () => {
           </div>
         </>
       ) : (
-        <div>Thank you</div>
+        <Navigate to="/congrat" replace={true} />
       )}
     </section>
   );
