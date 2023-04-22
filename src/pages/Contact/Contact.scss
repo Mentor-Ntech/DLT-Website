@@ -1,18 +1,68 @@
 .contact {
-    display: flex;
-    gap: 5rem;
-    
+  display: flex;
+  gap: 5rem;
 
-#inputCon {
+
+  #inputCon {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
 
-textarea {
+    @media screen and (max-width: 768px) {
+        input, textarea {
+            width: 410px;
+
+            @media screen and (max-width: 480px) {
+                width: 350px;
+            }
+            
+            @media screen and (max-width: 412px) {
+                width: 320px;
+            }
+
+            @media screen and (max-width: 375px) {
+                width: 260px;
+            }
+
+            @media screen and (max-width: 320px) {
+                width: 230px;
+            }
+
+            @media screen and (max-width: 280px) {
+                width: 190px;
+            }
+        }
+    }
+  }
+
+  textarea {
     width: 100%;
     height: 150px;
-}
-    
-}
+  }
 
 
+  @media screen and (max-width: 768px) {
+    gap: 2rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+}
+
+#successMessage {
+    padding: 2rem;
+    h2 {
+   color: #333934;
+
+   @media screen and (max-width: 1024px) {
+    font-size: 22px;
+  }
+
+   @media screen and (max-width: 540px) {
+    font-size: 18px;
+  }
+    }
+ 
+}
+ 
