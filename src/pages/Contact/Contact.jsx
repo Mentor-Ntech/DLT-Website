@@ -6,8 +6,11 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const [success, setSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  const [errMsg, setErrMsg] = useState("")
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +26,13 @@ const Contact = () => {
     client.create(contact).then(() => {
       setIsLoading(false);
       setSuccess(true);
-    });
+    }).catch(err => {
+      if (!err.res) {
+        setErrMsg("Network error: check your internet connection")
+      } else {
+        setErrMsg("Sending error: " + err.message)
+      }
+    })
   };
 
   return (
@@ -36,7 +45,7 @@ const Contact = () => {
       </div>
 
       {!success ? (
-        <div className="formContainer">
+        <div className="formContainer contactForm">
           <form onSubmit={handleSubmit}>
             <article id="inputCon">
               <div>
@@ -74,17 +83,29 @@ const Contact = () => {
             </article>
             <div className="btnCon">
               <button className="genBtn">
-                {isLoading ? "Loading" : "Send"}
+                {isLoading ? "Loading..." : "Send"}
               </button>
             </div>
           </form>
+
+          <p
+              className={errMsg ? "errMsg" : "offscreen"}
+              aria-live="assertive"
+            >
+              {errMsg}
+            </p>
         </div>
       ) : (
-        <div className="formContainer">
-        <h2 style={{ color: "#333934" }}>
-          Thank you for your feedback. <br /> Our team will take time to
-          review your message.
+        <div className="formContainer" id="successMessage">
+          <h2>
+            Thank you for your feedback. <br /> Our team will take time to
+            review your message.
           </h2>
+          <p className="pText" style={{ marginTop: 20 }}>
+            <a href="/" style={{ textDecoration: "none", color: "red" }}>
+              Go to homepage
+            </a>
+          </p>
         </div>
       )}
     </section>

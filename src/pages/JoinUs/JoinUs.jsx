@@ -108,7 +108,7 @@ const JoinUs = () => {
       })
       .catch((err) => {
         if (!err?.res) {
-          setErrMsg("No server response");
+          setErrMsg("Network error: check your internet connection");
         } else {
           setErrMsg("Registration failed");
         }
