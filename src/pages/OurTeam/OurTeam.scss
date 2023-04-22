@@ -1,0 +1,51 @@
+.ourTeam {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+
+  .profileContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+
+  .profileCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    // background-color: var(--secondary-color);
+    padding: 2rem;
+
+    img {
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    h3 {
+      margin-bottom: .5rem;
+    }
+
+    .position {
+      color: var(--white-color);
+      font-size: 13px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+.directorCard {
+  align-self: center;
+}
