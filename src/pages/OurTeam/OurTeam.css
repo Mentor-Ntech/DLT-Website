@@ -40,7 +40,7 @@
   justify-content: center;
   align-items: center;
   width: 350px;
-  border: 1px solid var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 1rem;
@@ -102,7 +102,7 @@
   color: #fff;
 }
 .ourTeam .profileCard:hover {
-  border: 1px solid var(--white-color);
+  border: 2px solid var(--white-color);
 }
 @media screen and (max-width: 1200px) {
   .ourTeam .profileCard {
