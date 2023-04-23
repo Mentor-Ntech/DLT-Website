@@ -3,7 +3,6 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
-import Congrat from "../Congrat/Congrat";
 import { Navigate } from "react-router-dom";
 
 import { client } from "../../client";
@@ -52,7 +51,7 @@ const JoinUs = () => {
       .required("Phone Number is required")
       .matches(
         /([0-9\s\-]{7,})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/,
-        "Phone Number musst be valid"
+        "Phone Number must be valid"
       ),
     AcadQual: yup
       .string()

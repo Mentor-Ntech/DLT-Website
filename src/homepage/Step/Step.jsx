@@ -6,8 +6,8 @@ const Step = () => {
     <section className='sectionStep'>
       <h2 className='stepHeading'>
       Jorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      <span> Nunc <br/> vulputate libero et velit interdum,
-      ac aliquet odio mattis.</span>
+      <span>vulputate libero et velit interdum,
+      acaliquet odio mattis.</span>
       </h2>
 
       <div className='stepCon'>
