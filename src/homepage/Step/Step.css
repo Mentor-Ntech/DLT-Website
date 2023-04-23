@@ -1,0 +1,118 @@
+.sectionStep {
+  padding: 3rem 0 3rem 3rem;
+}
+@media screen and (min-width: 2000px) {
+  .sectionStep {
+    padding: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sectionStep {
+    padding: 3rem;
+  }
+}
+.sectionStep .stepCon {
+  display: flex;
+  row-gap: 1.5rem;
+}
+.sectionStep .stepCon .stepText {
+  height: 100%;
+}
+.sectionStep .stepCon p {
+  line-height: 1.2;
+}
+@media screen and (min-width: 2000px) {
+  .sectionStep .stepCon p {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sectionStep .stepCon p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .sectionStep .stepCon p {
+    font-size: 15px;
+  }
+}
+.sectionStep .stepHeading {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 2000px) {
+  .sectionStep .stepHeading {
+    font-size: 60px;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sectionStep .stepHeading {
+    font-size: 80px;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sectionStep .stepHeading {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .sectionStep .stepHeading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sectionStep .stepHeading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sectionStep .stepHeading {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionStep .stepHeading span {
+    color: white;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .sectionStep img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sectionStep img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sectionStep img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionStep img {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sectionStep img {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sectionStep img {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sectionStep img {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sectionStep img {
+    display: none;
+  }
+}/*# sourceMappingURL=Step.css.map */

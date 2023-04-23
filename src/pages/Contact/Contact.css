@@ -1,0 +1,69 @@
+.contact {
+  display: flex;
+  gap: 5rem;
+}
+.contact #inputCon {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media screen and (max-width: 768px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 410px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 412px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 375px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 320px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 280px) {
+  .contact #inputCon input, .contact #inputCon textarea {
+    width: 190px;
+  }
+}
+.contact textarea {
+  width: 100%;
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+#successMessage {
+  padding: 2rem;
+}
+#successMessage h2 {
+  color: #333934;
+}
+@media screen and (max-width: 1024px) {
+  #successMessage h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 540px) {
+  #successMessage h2 {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=Contact.css.map */
