@@ -3,7 +3,6 @@ import { images } from "../../images";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 
-
 const socials = [
   {
     icon: <AiOutlineTwitter />,
@@ -32,7 +31,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <span>Email address:</span>
-              <small>info@dltafrica.io</small>
+              <small> info@dltafrica.io</small>
             </a>
             <br />
             <a
@@ -45,7 +44,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="reachOut">
-            <h4>Need to talk to directly <span className="outSp">?</span> Contact Us<span className="outSp">&gt;</span></h4>
+            <h4>
+              Need to talk to directly ? Contact Us
+              <span className="outSp">&gt;</span>
+            </h4>
             <h5>Follow Dltafrical:</h5>
 
             <div className="footerIcon">
@@ -66,7 +68,7 @@ const Footer = () => {
 
       <div className="dltLogo">
         <img src={images.dltlogo} alt="dlt-footer img" />
-        <p className="pText">...innovation through web3</p>
+        <p className="pText">...innovating through web3</p>
       </div>
     </footer>
   );

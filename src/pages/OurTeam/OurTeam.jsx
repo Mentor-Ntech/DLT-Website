@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 import "./OurTeam.scss";
-import { client, urlFor } from "../../api/client";
+import { client, urlFor } from "../../apis/client";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const OurTeam = () => {

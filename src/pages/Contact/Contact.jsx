@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { client } from "../../api/client";
+import { client } from "../../apis/client";
 import "./Contact.scss";
 
 const Contact = () => {

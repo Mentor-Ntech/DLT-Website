@@ -20,8 +20,8 @@
         width: 90px;
 
         @media screen and (min-width: 2000px) {
-          height: 110px;
-          width: 110px;
+          height: 150px;
+          width: 150px;
         }
       }
     }
@@ -104,6 +104,7 @@
   }
 
   .toggleMenu {
+    padding: 1.5rem;
     width: 100%;
     position: fixed;
     background-image: url(../../assets/hero.png);
@@ -169,6 +170,10 @@
           }
         }
       }
+    }
+
+    @media screen and (min-width: 2000px) {
+      padding: 5rem;
     }
   }
 }

@@ -4,7 +4,6 @@
 }
 
 .title {
-  font-size: 22px;
   padding-bottom: 2rem;
   margin: 0 3rem;
 }
@@ -62,6 +61,28 @@ h4 {
 }
 
 // Media queries
+@media screen and (min-width: 2000px) {
+  .title > h4,
+  .title > h2,
+  .joinCon2 > h2 {
+    font-size: 60px;
+  }
+
+  .paragraph,
+  h4 {
+    width: 70%;
+  }
+
+  .paragraph > p,
+  .pContent {
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  .networkPic img {
+    width: 70%;
+  }
+}
 
 @media screen and (max-width: 912px) {
   .joinCon2 > h2 {
@@ -75,9 +96,9 @@ h4 {
   }
 
   .paragraph,
-h4 {
-  width: 100%;
-}
+  h4 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -97,7 +118,6 @@ h4 {
 }
 
 @media screen and (max-width: 360px) {
-
   .joinCon {
     // margin: 3rem 3rem 0 3rem;
     background-color: #e4ffe8;

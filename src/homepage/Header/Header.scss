@@ -72,14 +72,14 @@
       font-weight: 400;
       letter-spacing: 1px;
 
-      @media screen and (min-width: 2000px) {
-        font-size: 46px;
-        font-weight: 500;
-      }
-
       @media screen and (max-width: 768px) {
         font-size: 12px;
       }
+    }
+
+    @media screen and (min-width: 2000px) {
+      font-size: 38px;
+      font-weight: 600;
     }
 
     @media screen and (max-width: 1200px) {
@@ -140,10 +140,6 @@
   }
 
   @media screen and (max-width: 600px) {
-    height: 50vh;
-  }
-
-  @media screen and (max-width: 414px) {
     height: 30vh;
   }
 }

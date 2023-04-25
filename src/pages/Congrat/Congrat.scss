@@ -15,11 +15,43 @@
 
   h2 {
     color: var(--honey-color);
+
+    @media screen and (min-width: 2000px) {
+      font-size: 65px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    color: var(--primary-color);
+
+    @media screen and (max-width: 768px) {
+      font-size: 25px;
+    }
+
+    @media screen and (min-width: 2000px) {
+      font-size: 65px;
+    }
   }
 
   a {
     text-decoration: none;
     color: var(--honey-color);
-    font-size: 30px;
+    font-size: 40px;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 65px;
+    }
+
+    @media screen and (max-width: 376px) {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 65px;
   }
 }

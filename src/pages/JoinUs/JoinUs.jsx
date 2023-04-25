@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-import { appClient } from "../../api/appClient";
+import { appClient } from "../../apis/appClient";
 import { Databases } from "appwrite";
 
 const JoinUs = () => {
