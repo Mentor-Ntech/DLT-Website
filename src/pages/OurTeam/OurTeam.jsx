@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import "./OurTeam.scss";
-import { client, urlFor } from "../../client";
-import { FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { client, urlFor } from "../../api/client";
+import images from "../../images/images";
 
 const OurTeam = () => {
+  // for data to query from sanity
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
@@ -17,6 +18,8 @@ const OurTeam = () => {
       <h2>OUR TEAM</h2>
       <p className="pText">Meet the DLT team</p>
 
+
+
       <div className="profileContainer">
         {team.map((team, index) => (
           <div key={index} className="profileCard">
@@ -24,6 +27,7 @@ const OurTeam = () => {
             <h3>{team.name}</h3>
             <h3 className="position">{team.position}</h3>
             <p className="pText">"{team.description}"</p>
+
             <div className="socialIcon">
               <a href={team.linkedinLink} target="_blank">
                 <FaLinkedinIn />
@@ -33,6 +37,7 @@ const OurTeam = () => {
                 <FaTwitter />
               </a>
             </div>
+
           </div>
         ))}
       </div>

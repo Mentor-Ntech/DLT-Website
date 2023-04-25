@@ -5,7 +5,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 
-import { client } from "../../client";
+import { appClient } from "../../api/appClient";
+import { Databases } from "appwrite";
 
 const JoinUs = () => {
   const [success, setSuccess] = useState(false);
@@ -53,7 +54,7 @@ const JoinUs = () => {
         /([0-9\s\-]{7,})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/,
         "Phone Number must be valid"
       ),
-    AcadQual: yup
+    acadQual: yup
       .string()
       .required("You must select an academic qualification"),
     email: yup
@@ -69,7 +70,7 @@ const JoinUs = () => {
     html: yup.string(),
     css: yup.string(),
     javascript: yup.string(),
-    other: yup.string(),
+    noneOfTheAbove: yup.string(),
   });
 
   // destructuring the form data using react-hook-form
@@ -83,33 +84,45 @@ const JoinUs = () => {
 
   // the function that will triggered the form submission
   const onSubmit = async (data) => {
-    console.log(data);
+    // Register Cohorts
 
     const join = {
-      _type: "join",
+      //   _type: "join",
       firstname: data.firstname,
       lastname: data.lastname,
       stateOfOrigin: data.stateOfOrigin,
       gender: data.gender,
       dob: data.dob,
       phoneNumber: data.phoneNumber,
-      AcadQual: data.AcadQual,
+      acadQual: data.acadQual,
       email: data.email,
       exp: data.exp,
       html: data.html,
       css: data.css,
       javascript: data.javascript,
-      other: data.other,
+      noneOfTheAbove: data.noneOfTheAbove,
     };
 
-    const result = await client
-      .create(join)
-      .then(() => {
+    const register = new Databases(appClient);
+
+    const newEmail = join.email;
+    const uniqueID = newEmail.replace("@", "");
+
+    const result = await register
+      .createDocument(
+        process.env.REACT_APP_DATABASE_ID,
+        process.env.REACT_APP_COLLECTION_ID,
+        uniqueID,
+        join
+      )
+      .then((res) => {
         setSuccess(true);
       })
       .catch((err) => {
-        if (!err?.res) {
-          setErrMsg("Network error: check your internet connection");
+        if (err.code === 409) {
+          setErrMsg("Email already exists");
+        } else if (err.code === 500 || 503) {
+          setErrMsg(err.message);
         } else {
           setErrMsg("Registration failed");
         }
@@ -214,11 +227,11 @@ const JoinUs = () => {
                   </p>
                 </div>
                 <div>
-                  <label htmlFor="AcadQual">Academy Qualification</label>
+                  <label htmlFor="acadQual">Academy Qualification</label>
                   <select
-                    name="AcadQual"
-                    id="AcadQual"
-                    {...register("AcadQual")}
+                    name="acadQual"
+                    id="acadQual"
+                    {...register("acadQual")}
                   >
                     <option value="">select an option</option>
 
@@ -282,8 +295,12 @@ const JoinUs = () => {
                 <label htmlFor="javascript">Javascript</label>
                 <br />
 
-                <input type="checkbox" id="other" {...register("other")} />
-                <label htmlFor="other">None of the above</label>
+                <input
+                  type="checkbox"
+                  id="noneOfTheAbove"
+                  {...register("noneOfTheAbove")}
+                />
+                <label htmlFor="noneOfTheAbove">None of the above</label>
                 <br />
               </aside>
 
