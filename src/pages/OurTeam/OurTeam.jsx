@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import "./OurTeam.scss";
 import { client, urlFor } from "../../api/client";
-import images from "../../images/images";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const OurTeam = () => {
   // for data to query from sanity
@@ -17,8 +17,6 @@ const OurTeam = () => {
     <section className="ourTeam">
       <h2>OUR TEAM</h2>
       <p className="pText">Meet the DLT team</p>
-
-
 
       <div className="profileContainer">
         {team.map((team, index) => (
@@ -37,7 +35,6 @@ const OurTeam = () => {
                 <FaTwitter />
               </a>
             </div>
-
           </div>
         ))}
       </div>
