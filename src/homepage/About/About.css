@@ -1,0 +1,146 @@
+.about {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 3rem;
+}
+.about .imgContainer {
+  width: 60%;
+}
+.about .imgContainer img {
+  position: relative;
+  height: 523px;
+  width: 642px;
+}
+@media screen and (min-width: 2000px) {
+  .about .imgContainer img {
+    height: 923px;
+    width: 842px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about .imgContainer img {
+    height: 423px;
+    width: 542px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .imgContainer img {
+    height: 280px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about .imgContainer img {
+    height: 200px;
+    width: 280px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about .imgContainer img {
+    height: 150px;
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .imgContainer {
+    width: 100%;
+    order: 2;
+  }
+}
+.about .aboutTextCon {
+  margin-top: 2rem;
+  width: 50%;
+}
+.about .aboutTextCon p {
+  margin: 1rem 0;
+}
+@media screen and (min-width: 2000px) {
+  .about .aboutTextCon p {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .aboutTextCon p {
+    font-size: 12px;
+  }
+}
+.about .aboutTextCon .absText {
+  position: absolute;
+  right: 20px;
+  left: 25%;
+  margin-top: 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .about .aboutTextCon .absText {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .aboutTextCon .absText {
+    margin-top: 30rem;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .aboutTextCon .absText {
+    margin-top: 22rem;
+    left: 7%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about .aboutTextCon .absText {
+    margin-top: 17rem;
+    left: 9%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about .aboutTextCon .absText {
+    margin-top: 14rem;
+    left: 14%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .about .aboutTextCon h2 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .aboutTextCon h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about .aboutTextCon h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .about .aboutTextCon {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .aboutTextCon {
+    width: 100%;
+    order: 1;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .about {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    flex-direction: column;
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about {
+    padding-bottom: 10rem;
+  }
+}/*# sourceMappingURL=About.css.map */

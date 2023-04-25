@@ -1,0 +1,14 @@
+.not-found {
+  padding: 8rem 10px;
+  text-align: center;
+  font-size: 35px;
+}
+.not-found h2,
+.not-found h5,
+.not-found p {
+  color: var(--white-color);
+}
+.not-found a {
+  color: var(--honey-color);
+  text-decoration: none;
+}/*# sourceMappingURL=NotFound.css.map */

@@ -18,7 +18,6 @@ h2 {
   line-height: 1.2;
   color: var(--secondary-color);
   letter-spacing: 0.8px;
-
 }
 
 h3 {
@@ -35,13 +34,9 @@ h3 {
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-
   background-color: #1d700e;
   color: #c5cdc7;
-
-  &:hover {
-    background-color: #175c0a;
-  }
 }
-
-
+.genBtn:hover {
+  background-color: #175c0a;
+}/*# sourceMappingURL=App.css.map */

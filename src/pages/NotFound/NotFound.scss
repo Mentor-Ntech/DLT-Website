@@ -1,0 +1,16 @@
+.not-found {
+  padding: 8rem 10px;
+  text-align: center;
+  font-size: 35px;
+
+  h2,
+  h5,
+  p {
+    color: var(--white-color);
+  }
+
+  a {
+    color: var(--honey-color);
+    text-decoration: none;
+  }
+}

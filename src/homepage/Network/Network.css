@@ -1,9 +1,10 @@
 .ourNetworkCon {
   background-color: var(--light-color);
-  padding-top: 4rem;
+  padding: 4rem 0;
 }
 
 .title {
+  font-family: Source Sans Pro;
   font-size: 22px;
   padding-bottom: 2rem;
   margin: 0 3rem;
@@ -12,8 +13,12 @@
 .title > h2 {
   margin-bottom: 2rem;
   color: var(--honey-color);
+  font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 600;
   font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.15em;
 }
 
 .title > h4 {
@@ -23,21 +28,19 @@
   letter-spacing: 1px;
 }
 
-.paragraph,
-h4 {
-  width: 55%;
-}
-
 .paragraph > p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 15px;
+  letter-spacing: 0.15em;
 }
 
 .joinCon {
   margin: 3rem 3rem 0 3rem;
   background-color: #e4ffe8;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
 }
 
 .joinCon2 {
@@ -45,48 +48,36 @@ h4 {
 }
 
 .joinCon > h2 {
+  font-family: "Source Sans Pro";
   margin-bottom: 2rem;
   color: var(--honey-color);
 }
 
 .pContent {
   margin-top: 1rem;
+  font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.15em;
 }
 
 .joinCon2 > h2 {
   color: var(--honey-color);
+  font-family: "Source Sans Pro";
+  font-style: normal;
   font-weight: 600;
   font-size: 22px;
-}
-
-// Media queries
-
-@media screen and (max-width: 912px) {
-  .joinCon2 > h2 {
-    font-size: 30px;
-  }
+  line-height: 18px;
+  letter-spacing: 0.15em;
 }
 
 @media screen and (max-width: 768px) {
   .networkPic {
     display: none;
   }
-
-  .paragraph,
-h4 {
-  width: 100%;
 }
-}
-
-@media screen and (max-width: 540px) {
-  .joinCon {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .joinCon2 > h2 {
     font-size: 22px;
@@ -95,11 +86,26 @@ h4 {
     font-size: 18px;
   }
 }
-
 @media screen and (max-width: 360px) {
-
+  .title > h4 {
+    font-size: 14px;
+  }
+  .paragraph > p {
+    font-style: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  .pContent {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .joinCon2 > h2 {
+    font-size: 16px;
+  }
   .joinCon {
-    // margin: 3rem 3rem 0 3rem;
     background-color: #e4ffe8;
     border-radius: 10px;
     width: 100%;
@@ -108,31 +114,26 @@ h4 {
     padding: 2rem;
   }
 }
-
 @media screen and (max-width: 320px) {
   .title > h2 {
     font-size: 16px;
   }
-
   .title > h4 {
     font-size: 22px;
   }
-
   .title > p {
     font-size: 12px;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .title > h2 {
-    font-size: 16px;
+  .networkPic {
+    display: none;
   }
-
-  .title > h4 {
-    font-size: 22px;
+  .joinCon2 > h2 {
+    font-size: 14px;
   }
-
-  .title > p {
+  .pContent {
     font-size: 12px;
   }
-}
+  .paragraph > p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=Network.css.map */

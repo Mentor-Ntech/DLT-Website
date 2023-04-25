@@ -136,7 +136,15 @@
   }
 
   @media screen and (max-width: 912px) {
-    height: 40vh;
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: 50vh;
+  }
+
+  @media screen and (max-width: 414px) {
+    height: 30vh;
   }
 }
 

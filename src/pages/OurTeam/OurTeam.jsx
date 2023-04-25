@@ -17,17 +17,9 @@ const OurTeam = () => {
     <section className="ourTeam">
       <h2>OUR TEAM</h2>
       <p className="pText">Meet the DLT team</p>
-      <div className="profileCard directorCard">
-        <img src={images.Director} />
-        <h3>Aliu Musa</h3>
-        <h3 className="position">Director</h3>
-        <p className="pText">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate libero et velit interdum, ac aliquet odio mattis. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per
-          inceptos himenaeos."
-        </p>
-      </div>
+
+
+
       <div className="profileContainer">
         {team.map((team, index) => (
           <div key={index} className="profileCard">
@@ -35,6 +27,17 @@ const OurTeam = () => {
             <h3>{team.name}</h3>
             <h3 className="position">{team.position}</h3>
             <p className="pText">"{team.description}"</p>
+
+            <div className="socialIcon">
+              <a href={team.linkedinLink} target="_blank">
+                <FaLinkedinIn />
+              </a>
+
+              <a href={team.twitterLink} target="_blank">
+                <FaTwitter />
+              </a>
+            </div>
+
           </div>
         ))}
       </div>
