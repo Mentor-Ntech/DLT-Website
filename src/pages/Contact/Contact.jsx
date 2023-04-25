@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { client } from "../../client";
+import { client } from "../../api/client";
 import "./Contact.scss";
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const [errMsg, setErrMsg] = useState("")
+  const [errMsg, setErrMsg] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,16 +23,19 @@ const Contact = () => {
       message: message,
     };
 
-    client.create(contact).then(() => {
-      setIsLoading(false);
-      setSuccess(true);
-    }).catch(err => {
-      if (!err.res) {
-        setErrMsg("Network error: check your internet connection")
-      } else {
-        setErrMsg("Sending error: " + err.message)
-      }
-    })
+    client
+      .create(contact)
+      .then(() => {
+        setIsLoading(false);
+        setSuccess(true);
+      })
+      .catch((err) => {
+        if (!err.res) {
+          setErrMsg("Network error: check your internet connection");
+        } else {
+          setErrMsg("Sending error: " + err.message);
+        }
+      });
   };
 
   return (
@@ -88,12 +91,9 @@ const Contact = () => {
             </div>
           </form>
 
-          <p
-              className={errMsg ? "errMsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {errMsg}
-            </p>
+          <p className={errMsg ? "errMsg" : "offscreen"} aria-live="assertive">
+            {errMsg}
+          </p>
         </div>
       ) : (
         <div className="formContainer" id="successMessage">
