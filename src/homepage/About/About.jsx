@@ -3,7 +3,7 @@ import { images } from "../../images";
 
 const listText = [
   "We engage top talents in a cohort based learning experience, taking them through full-stack software development and smart contract development.",
-  "Our training is  project based, with each cohort building up to 20 realword projects through their training with a final capstone project solving real world use cases with Web3.",
+  "Our training is  project based, with each cohort building up to 20 real word projects through their training with a final capstone project solving real world use cases with Web3.",
 ];
 const About = () => {
   return (
