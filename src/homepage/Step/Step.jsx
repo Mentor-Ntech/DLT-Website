@@ -1,28 +1,36 @@
-import './Step.scss';
-import {images} from '../../images'
+import "./Step.scss";
+import { images } from "../../images";
 
 const Step = () => {
   return (
-    <section className='sectionStep'>
-      <h2 className='stepHeading'>
-      Jorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      <span>vulputate libero et velit interdum,
-      acaliquet odio mattis.</span>
+    <section className="sectionStep">
+      <h2 className="stepHeading">
+        DLT Africa Incubation Program To Support
+        <span> Web3 Builders.</span>
       </h2>
 
-      <div className='stepCon'>
-       
-        <p className='pText'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-          per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. 
-          Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
-        </p>          
-          <img src={images.step} alt=""/>
+      <div className="stepCon">
+        <p className="pText">
+          Our Web3 Incubation Program provides comprehensive support for web3
+          builders. Builders will receive mentorship, get feedback, have
+          opportunity to share session with other top builders across many
+          successful Web3 projects at no cost.
+          <br />
+          <br />
+          Builders will also have the chance to utilize different resources from
+          our partners as well as receiving technical support through the
+          program.
+          <br />
+          <br />
+          The Web3 Incubation Program is fully online and invite participants
+          across Africa buildings or willing to build in the Web3 space. We also
+          welcome web2 builders willing to find a web3 strategy for their
+          products.
+        </p>
+        <img src={images.step} alt="step to incubation program" />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Step
+export default Step;

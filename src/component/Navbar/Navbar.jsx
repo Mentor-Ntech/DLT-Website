@@ -5,7 +5,7 @@ import { FiMenu } from "react-icons/fi";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navList = [
   { title: "Projects", id: 1, path: "/projects" },
@@ -37,7 +37,7 @@ const Navbar = () => {
             {navList.map(({ title, id, path }) => (
               <ul key={id}>
                 <li>
-                  <Link to={path}>{title}</Link>
+                  <NavLink to={path}>{title}</NavLink>
                 </li>
               </ul>
             ))}
@@ -56,9 +56,9 @@ const Navbar = () => {
                 <ul>
                   {navItems.map(({ title, id, path }) => (
                     <li key={id}>
-                      <Link to={path} onClick={() => setToggle(false)}>
+                      <NavLink to={path} onClick={() => setToggle(false)}>
                         {title}
-                      </Link>
+                      </NavLink>
                     </li>
                   ))}
                 </ul>

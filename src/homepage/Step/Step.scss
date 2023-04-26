@@ -1,106 +1,97 @@
 .sectionStep {
-    padding: 5rem 0 3rem 3rem;
+  padding: 5rem 0 3rem 3rem;
+
+  @media screen and (min-width: 2000px) {
+    // padding: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 4rem 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 5rem 2.5rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 9rem 2.3rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 10rem 2.2rem;
+  }
+
+  .stepCon {
+    display: flex;
+    row-gap: 1.5rem;
+
+    .stepText {
+      height: 100%;
+    }
+
+    p {
+      line-height: 1.2;
+
+      @media screen and (min-width: 2000px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 20px;
+      }
+
+      @media screen and (max-width: 912px) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .stepHeading {
+    margin-bottom: 3rem;
+    font-size: 60px;
+    width: 60%;
+
+    span {
+      color: white;
+    }
 
     @media screen and (min-width: 2000px) {
-        // padding: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+      font-size: 38px;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 912px) {
+      font-size: 30px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 20px;
+    }
+  }
+
+  img {
+    @media screen and (min-width: 2000px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 45%;
     }
 
     @media screen and (max-width: 768px) {
-        padding: 4rem 3rem;
+      display: none;
     }
-    
-    @media screen and (max-width: 600px) {
-        padding: 5rem 2.5rem;
-    }
-
-    @media screen and (max-width: 540px) {
-        padding: 9rem 2.3rem;
-    }
-
-    @media screen and (max-width: 376px) {
-        padding: 10rem 2.2rem;
-    }
-
-    .stepCon {
-        display: flex;
-        row-gap: 1.5rem;
-
-    .stepText {
-        height: 100%;
-    }
-
-        p {
-            line-height: 1.2;
-
-            @media screen and (min-width: 2000px) {
-                font-size: 40px;
-            }
-            @media screen and (max-width: 1024px) {
-                font-size: 20px;
-            }
-
-            @media screen and (max-width: 912px) {
-                font-size: 18px;
-            }
-        }
-    }
-
-
-    .stepHeading{
-        margin-bottom: 3rem;
-        font-size: 60px;
-        width: 60%;
-
-        @media screen and (min-width: 2000px) {
-            margin-bottom: 2rem;
-        }
-
-        @media screen and (max-width: 1200px) {
-            font-size: 38px;
-            margin-bottom: 2rem;
-        }
-
-        @media screen and (max-width: 912px) {
-            font-size: 30px;
-            width: 100%;
-        }
-
-        @media screen and (max-width: 768px) {
-            span {
-                color: white;
-            }
-
-        }
-
-        @media screen and (max-width: 480px) {
-             font-size: 25px;
-        }
-
-        @media screen and (max-width: 320px) {
-            font-size: 20px;
-        }
-
-      
-    }
-   
-    img {
-        @media screen and (min-width: 2000px) {
-            width: 100%;
-        }
-
-        @media screen and (max-width: 1200px) {
-            width: 100%;
-        }
-
-        @media screen and (max-width: 1024px) {
-            width: 45%;
-        }
-
-        @media screen and (max-width: 768px) {
-            display: none;
-
-        }
-    }
+  }
 }
-
-

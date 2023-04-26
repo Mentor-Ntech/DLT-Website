@@ -48,7 +48,7 @@ const Footer = () => {
               Need to talk to directly ? Contact Us
               <span className="outSp">&gt;</span>
             </h4>
-            <h5>Follow Dltafrical:</h5>
+            <h5>Follow DLTAfrica:</h5>
 
             <div className="footerIcon">
               <ul className="item">

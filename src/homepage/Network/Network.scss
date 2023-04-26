@@ -27,9 +27,9 @@ h4 {
   width: 55%;
 }
 
-.paragraph > p {
+.paragraph > .pNetwork {
   font-weight: 400;
-  font-size: 16px;
+  color: var(--black-color);
 }
 
 .joinCon {
@@ -48,10 +48,10 @@ h4 {
   color: var(--honey-color);
 }
 
-.pContent {
+.joinCon2 .pContent {
   margin-top: 1rem;
   font-weight: 400;
-  font-size: 16px;
+  color: var(--black-color);
 }
 
 .joinCon2 > h2 {

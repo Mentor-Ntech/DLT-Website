@@ -8,7 +8,8 @@ const Header = () => {
     <header className="header container">
       <div className="containerLeft">
         <h1>
-          Corem ipsum dolor sit amet, <span>consectetur adipiscing elit.</span>
+          Home Of Web3 Learning And Incubation Program From
+          <span> Ground Zero To Market-Fit Product.</span>
         </h1>
         <div>
           <Link className="btn genBtn" to="/join">
