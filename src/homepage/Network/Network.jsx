@@ -4,7 +4,7 @@ import "./Network.scss";
 const Network = () => {
   return (
     <section className="ourNetworkCon">
-      <div className="title">
+      {/* <div className="title">
         <h2>OUR NETWORK</h2>
         <h4>Jorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
         <div className="paragraph">
@@ -17,7 +17,7 @@ const Network = () => {
             exercitationem beatae dolor,
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="joinCon">
         <div className="joinCon2">

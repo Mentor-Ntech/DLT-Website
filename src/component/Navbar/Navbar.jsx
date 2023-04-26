@@ -8,15 +8,18 @@ import { motion } from "framer-motion";
 import { Link, NavLink } from "react-router-dom";
 
 const navList = [
-  { title: "Projects", id: 1, path: "/projects" },
-  { title: "About Us", id: 2, path: "/about" },
+  //   { title: "Projects", id: 1, path: "/projects" },
+  //   { title: "About Us", id: 2, path: "#about" },
+  { title: "Contact", id: 2, path: "/contact" },
+  { title: "Our Team", id: 3, path: "/team" },
+  { title: "Join Us", id: 5, path: "/join" },
 ];
 
 const navItems = [
   { title: "Home", id: 1, path: "/" },
   { title: "Contact", id: 2, path: "/contact" },
   { title: "Our Team", id: 3, path: "/team" },
-  { title: "About Us", id: 4, path: "/about" },
+  //   { title: "About Us", id: 4, path: "/about" },
   { title: "Join Next Cohorts", id: 5, path: "/join" },
 ];
 
@@ -41,12 +44,17 @@ const Navbar = () => {
                 </li>
               </ul>
             ))}
+            <ul>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+            </ul>
           </div>
           <div className="navbarMenu">
             <FiMenu onClick={() => setToggle(true)} />
             {toggle && (
               <motion.div
-                whileInView={{ x: [290, 0] }}
+                whileInView={{ x: [260, 0] }}
                 transition={{ duration: 0.85, ease: "easeOut" }}
                 className="toggleMenu"
               >

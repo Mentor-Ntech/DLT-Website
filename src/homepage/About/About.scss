@@ -4,7 +4,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;
-  padding: 4rem 3rem;
+  padding: 1rem 3rem;
 
   .imgContainer {
     width: 60%;
@@ -106,10 +106,8 @@
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
-    padding-bottom: 5rem;
   }
 
   @media screen and (max-width: 320px) {
-    padding-bottom: 10rem;
   }
 }

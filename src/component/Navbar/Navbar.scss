@@ -64,7 +64,7 @@
         }
       }
 
-      @media screen and (max-width: 900px) {
+      @media screen and (max-width: 912px) {
         display: none;
       }
     }
@@ -91,7 +91,7 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: var(--honey-color);
@@ -175,5 +175,9 @@
     @media screen and (min-width: 2000px) {
       padding: 5rem;
     }
+  }
+
+  @media screen and (max-width: 912px) {
+    display: flex;
   }
 }

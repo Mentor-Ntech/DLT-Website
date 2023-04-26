@@ -85,9 +85,8 @@ const JoinUs = () => {
   // the function that will triggered the form submission
   const onSubmit = async (data) => {
     // Register Cohorts
-
     const join = {
-      //   _type: "join",
+      //   _type: "join", // this for sanity
       firstname: data.firstname,
       lastname: data.lastname,
       stateOfOrigin: data.stateOfOrigin,
@@ -108,7 +107,7 @@ const JoinUs = () => {
     const newEmail = join.email;
     const uniqueID = newEmail.replace("@", "");
 
-    const result = await register
+    const res = await register
       .createDocument(
         process.env.REACT_APP_DATABASE_ID,
         process.env.REACT_APP_COLLECTION_ID,
@@ -116,19 +115,15 @@ const JoinUs = () => {
         join
       )
       .then((res) => {
+        // console.log(res);
         setSuccess(true);
       })
       .catch((err) => {
-        if (err.code === 409) {
-          setErrMsg("Email already exists");
-        } else if (err.code === 500 || 503) {
-          setErrMsg(err.message);
-        } else {
-          setErrMsg("Registration failed");
-        }
+        if (!err?.res) setErrMsg("No Server Response or Email Already exists");
+        else setErrMsg("Registration Failed");
       });
 
-    return result;
+    return res;
   };
 
   return (

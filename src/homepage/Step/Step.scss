@@ -1,25 +1,5 @@
 .sectionStep {
-  padding: 5rem 0 3rem 3rem;
-
-  @media screen and (min-width: 2000px) {
-    // padding: 3rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 4rem 3rem;
-  }
-
-  @media screen and (max-width: 600px) {
-    padding: 5rem 2.5rem;
-  }
-
-  @media screen and (max-width: 540px) {
-    padding: 9rem 2.3rem;
-  }
-
-  @media screen and (max-width: 376px) {
-    padding: 10rem 2.2rem;
-  }
+  padding: 3rem 0 3rem 3rem;
 
   .stepCon {
     display: flex;
@@ -93,5 +73,25 @@
     @media screen and (max-width: 768px) {
       display: none;
     }
+  }
+
+  @media screen and (min-width: 2000px) {
+    // padding: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 2rem 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 3rem 2.5rem;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 4rem 2.3rem;
+  }
+
+  @media screen and (max-width: 376px) {
+    padding: 5rem 2.2rem;
   }
 }
