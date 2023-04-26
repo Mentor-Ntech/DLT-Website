@@ -47,7 +47,8 @@
         letter-spacing: 0.5px;
         font-size: 1.2rem;
         font-weight: 700;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
 
         @media screen and (min-width: 2000px) {
           font-size: 2rem;
