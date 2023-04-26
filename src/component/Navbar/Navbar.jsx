@@ -40,12 +40,15 @@ const Navbar = () => {
             {navList.map(({ title, id, path }) => (
               <ul key={id}>
                 <li>
+                  <div />
                   <NavLink to={path}>{title}</NavLink>
                 </li>
               </ul>
             ))}
             <ul>
               <li>
+                <div />
+
                 <a href="#about">About Us</a>
               </li>
             </ul>

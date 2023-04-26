@@ -34,6 +34,7 @@
     align-items: center;
 
     .navbarItemsLinks {
+      flex: 1;
       display: flex;
       flex-direction: row;
 
@@ -42,24 +43,42 @@
         margin-right: 3rem;
         text-transform: uppercase;
 
-        a {
-          transition: all 0.5s ease-in-out;
-          -webkit-transition: all 0.5s ease-in-out;
-          -moz-transition: all 0.5s ease-in-out;
-          -ms-transition: all 0.5s ease-in-out;
-          -o-transition: all 0.5s ease-in-out;
+        li {
+          div {
+            width: 10px;
+            height: 10px;
 
-          text-decoration: none;
-          color: var(--honey-color);
-          font-weight: 400;
-          font-size: 1.3rem;
+            margin-bottom: 5px;
+            background: transparent;
 
-          &:hover {
-            color: var(--white-color);
+            border-radius: 50px;
           }
 
-          @media screen and (min-width: 2000px) {
-            font-size: 2.3rem;
+          a {
+            transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+
+            text-decoration: none;
+            color: var(--honey-color);
+            font-weight: 400;
+            font-size: 1.3rem;
+
+            &:hover {
+              color: var(--white-color);
+            }
+
+            @media screen and (min-width: 2000px) {
+              font-size: 2.3rem;
+            }
+          }
+        }
+
+        &:hover {
+          div {
+            background: var(--white-color);
           }
         }
       }
