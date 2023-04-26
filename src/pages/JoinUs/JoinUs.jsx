@@ -119,7 +119,8 @@ const JoinUs = () => {
         setSuccess(true);
       })
       .catch((err) => {
-        if (!err?.res) setErrMsg("No Server Response or Email Already exists");
+        if (!err?.res || err?.res.status === 409)
+          setErrMsg("No Server Response or Email Already exists");
         else setErrMsg("Registration Failed");
       });
 
