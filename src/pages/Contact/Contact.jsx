@@ -30,8 +30,9 @@ const Contact = () => {
         setSuccess(true);
       })
       .catch((err) => {
-        if (!err.res) {
+        if (!err?.res !== "ok") {
           setErrMsg("Network error: check your internet connection");
+          setIsLoading(false);
         } else {
           setErrMsg("Sending error: " + err.message);
         }
@@ -43,7 +44,7 @@ const Contact = () => {
       <div className="headerText">
         <h2>Contact</h2>
         <small className="pText">
-          Looking to get more information about DLT? Send us a direct message.
+          Looking to get more information about DLT ? Send us a direct message.
         </small>
       </div>
 

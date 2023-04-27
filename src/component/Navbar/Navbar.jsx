@@ -5,11 +5,11 @@ import { FiMenu } from "react-icons/fi";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const navList = [
+  // { title: "About Us", id: 2, path: "/about" },
   //   { title: "Projects", id: 1, path: "/projects" },
-  //   { title: "About Us", id: 2, path: "#about" },
   { title: "Contact", id: 2, path: "/contact" },
   { title: "Our Team", id: 3, path: "/team" },
   { title: "Join Us", id: 5, path: "/join" },
@@ -19,8 +19,9 @@ const navItems = [
   { title: "Home", id: 1, path: "/" },
   { title: "Contact", id: 2, path: "/contact" },
   { title: "Our Team", id: 3, path: "/team" },
-  //   { title: "About Us", id: 4, path: "/about" },
-  { title: "Join Next Cohorts", id: 5, path: "/join" },
+  { title: "Join Next Cohorts", id: 4, path: "/join" },
+  //   { title: "FAQs", id: 5, path: "/faqs" },
+  //   { title: "About Us", id: 6, path: "/about" },
 ];
 
 const Navbar = () => {
@@ -37,18 +38,21 @@ const Navbar = () => {
 
         <div className="navbarItems appFlex">
           <div className="navbarItemsLinks">
-            {navList.map(({ title, id, path }) => (
-              <ul key={id}>
-                <li>
+            <ul>
+              {navList.map(({ title, id, path }) => (
+                <li key={id}>
                   <div />
                   <NavLink to={path}>{title}</NavLink>
                 </li>
-              </ul>
-            ))}
-            <ul>
+              ))}
               <li>
                 <div />
-
+                <a href="#faqs">
+                  FAQ<span>s</span>
+                </a>
+              </li>
+              <li>
+                <div />
                 <a href="#about">About Us</a>
               </li>
             </ul>
@@ -72,6 +76,16 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                   ))}
+                  <li>
+                    <a href="#faqs" onClick={() => setToggle(false)}>
+                      FAQs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#about" onClick={() => setToggle(false)}>
+                      About Us
+                    </a>
+                  </li>
                 </ul>
               </motion.div>
             )}
