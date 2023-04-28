@@ -11,9 +11,12 @@ const Header = () => {
           Home Of Web3 Learning And Incubation Program From
           <span> Ground Zero To Market-Fit Product.</span>
         </h1>
-        <div>
-          <Link className="btn genBtn" to="/join">
-            Apply Now
+        <div className="applyBtn">
+          <Link className="btn genBtn" to="/training">
+            Apply For Training
+          </Link>
+          <Link className="btn genBtn" to="/incubation">
+            Apply For Incubation
           </Link>
         </div>
       </div>

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./OurTeam.scss";
 import { client, urlFor } from "../../apis/client";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { BiLoader } from "react-icons/bi";
 
 const OurTeam = () => {
   // for data to query from sanity
@@ -31,7 +32,9 @@ const OurTeam = () => {
 
       {!isLoading ? (
         <div style={{ textAlign: "center", marginTop: 100 }}>
-          <h2>Loading Team Data...</h2>
+          <h2>
+            <BiLoader /> Loading...
+          </h2>
         </div>
       ) : (
         <div className="profileContainer">

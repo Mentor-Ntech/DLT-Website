@@ -108,6 +108,10 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 540px) {
+    padding: 1rem;
+  }
+
   @media screen and (max-width: 320px) {
   }
 }

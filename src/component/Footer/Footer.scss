@@ -224,6 +224,10 @@
     }
   }
 
+  @media screen and (max-width: 540px) {
+    padding: 3rem 1rem 0;
+  }
+
   @media screen and (max-width: 480px) {
     font-size: 10px;
   }
