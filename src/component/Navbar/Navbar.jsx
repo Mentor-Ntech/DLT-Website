@@ -6,20 +6,37 @@ import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import MenuItems from "./MenuItems";
 
-const navList = [
+const navLists = [
   // { title: "About Us", id: 2, path: "/about" },
   //   { title: "Projects", id: 1, path: "/projects" },
   { title: "Contact", id: 2, path: "/contact" },
   { title: "Our Team", id: 3, path: "/team" },
-  { title: "Join Us", id: 5, path: "/join" },
+  {
+    title: "Join Us",
+    id: 5,
+    path: "/join",
+    submenu: [
+      { title: "Training", path: "/join", id: 5.1 },
+      { title: "Incubation Program", path: "/join", id: 5.2 },
+    ],
+  },
 ];
 
 const navItems = [
   { title: "Home", id: 1, path: "/" },
   { title: "Contact", id: 2, path: "/contact" },
   { title: "Our Team", id: 3, path: "/team" },
-  { title: "Join Next Cohorts", id: 4, path: "/join" },
+  {
+    title: "Join Next Cohorts",
+    id: 4,
+    path: "/join",
+    submenu: [
+      { title: "Apply for training", path: "/join", id: 4.1 },
+      { title: "Apply for training", path: "/join", id: 4.2 },
+    ],
+  },
   //   { title: "FAQs", id: 5, path: "/faqs" },
   //   { title: "About Us", id: 6, path: "/about" },
 ];
@@ -30,20 +47,15 @@ const Navbar = () => {
   return (
     <nav className="navbar container">
       <div className="navbarCon">
-        <div className="navbarLogo">
-          <a href="/">
-            <img src={images.dltlogo} alt="DLTAfrica logo" />
-          </a>
-        </div>
+        <a href="/">
+          <img src={images.dltlogo} alt="DLTAfrica logo" />
+        </a>
 
         <div className="navbarItems appFlex">
           <div className="navbarItemsLinks">
             <ul>
-              {navList.map(({ title, id, path }) => (
-                <li key={id}>
-                  <div />
-                  <NavLink to={path}>{title}</NavLink>
-                </li>
+              {navLists.map((navList) => (
+                <MenuItems items={navList} key={navList.id} />
               ))}
               <li>
                 <div />

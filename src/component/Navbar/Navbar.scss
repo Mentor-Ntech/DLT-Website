@@ -5,6 +5,7 @@
   padding: 0 1rem;
   position: fixed;
   z-index: 2;
+  height: 5rem;
 
   .navbarCon {
     display: flex;
@@ -12,17 +13,13 @@
     justify-content: space-between;
     align-items: center;
 
-    .navbarLogo {
-      margin-left: 1rem;
+    img {
+      height: 75px;
+      width: 90px;
 
-      img {
-        height: 75px;
-        width: 90px;
-
-        @media screen and (min-width: 2000px) {
-          height: 150px;
-          width: 150px;
-        }
+      @media screen and (min-width: 2000px) {
+        height: 150px;
+        width: 150px;
       }
     }
   }
@@ -208,4 +205,37 @@
   @media screen and (max-width: 912px) {
     display: flex;
   }
+}
+
+#dropdown {
+  position: absolute;
+  left: auto;
+  font-size: 0.875rem;
+  z-index: 9999;
+  width: 15rem;
+  list-style: none;
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: none;
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    a {
+      text-transform: lowercase;
+      text-transform: capitalize;
+
+      &:hover {
+        color: var(--dark-color);
+      }
+    }
+  }
+}
+
+#dropdown.show {
+  display: block;
 }
