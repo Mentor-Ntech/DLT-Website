@@ -1,4 +1,4 @@
-import "./JoinUs.scss";
+import "./Training.scss";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -8,7 +8,7 @@ import { Navigate } from "react-router-dom";
 import { appClient } from "../../apis/appClient";
 import { Databases } from "appwrite";
 
-const JoinUs = () => {
+const Training = () => {
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState(false);
 
@@ -132,7 +132,7 @@ const JoinUs = () => {
       {!success ? (
         <>
           <div className="headerText">
-            <h2>Join Next Cohort</h2>
+            <h2>Join Next Cohort For Training</h2>
             <small className="pText">Fill the form below:</small>
           </div>
 
@@ -319,4 +319,4 @@ const JoinUs = () => {
   );
 };
 
-export default JoinUs;
+export default Training;

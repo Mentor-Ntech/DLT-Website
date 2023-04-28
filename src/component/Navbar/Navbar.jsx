@@ -18,8 +18,8 @@ const navLists = [
     id: 5,
     path: "/join",
     submenu: [
-      { title: "Training", path: "/join", id: 5.1 },
-      { title: "Incubation Program", path: "/join", id: 5.2 },
+      { title: "Training", path: "/training", id: 5.1 },
+      { title: "Incubation Program", path: "/incubation", id: 5.2 },
     ],
   },
 ];

@@ -1,6 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 
-import { Congrat, Contact, JoinUs, OurTeam, NotFound } from "./pages";
+import {
+  Congrat,
+  Contact,
+  Training,
+  OurTeam,
+  NotFound,
+  Incubation,
+} from "./pages";
 import Home from "./Home/Home";
 import { Layout, HomeLayout } from "./component/index";
 
@@ -14,7 +21,8 @@ const App = () => {
         <Route element={<Layout />}>
           <Route exact path="/team" element={<OurTeam />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/join" element={<JoinUs />} />
+          <Route exact path="/training" element={<Training />} />
+          <Route exact path="/incubation" element={<Incubation />} />
           <Route path="*" element={<NotFound />} />
         </Route>
 
