@@ -2,13 +2,16 @@ import "./Training.scss";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Navigate } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 import { appClient } from "../../apis/appClient";
 import { Databases } from "appwrite";
 
 const Training = () => {
+  const form = useRef();
+
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState(false);
 
@@ -116,6 +119,23 @@ const Training = () => {
       )
       .then((res) => {
         // console.log(res);
+
+        // Email messages and auto-reply
+        emailjs.sendForm(
+          process.env.EMAILJS_SERVICE_ID,
+          process.env.EMAILJS_TEMPLATE_ID,
+          form.current,
+          process.env.EMAILJS_YOUR_PUBLIC_KEY
+        );
+        //   .then(
+        //     (result) => {
+        //       console.log(result.text);
+        //     },
+        //     (error) => {
+        //       console.log(error.text);
+        //     }
+        //   );
+
         setSuccess(true);
       })
       .catch((err) => {
@@ -137,7 +157,7 @@ const Training = () => {
           </div>
 
           <div className="formContainer">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form ref={form} onSubmit={handleSubmit(onSubmit)}>
               <article>
                 <div>
                   <label htmlFor="firstname">Firstname</label>
@@ -145,6 +165,7 @@ const Training = () => {
                     type="text"
                     id="firstname"
                     {...register("firstname")}
+                    name="firstname"
                   />
                   <p
                     className={`${
@@ -212,6 +233,7 @@ const Training = () => {
                     type="number"
                     id="phoneNumber"
                     placeholder="+2348100000000"
+                    name="phoneNumber"
                     {...register("phoneNumber")}
                   />
                   <p
@@ -249,7 +271,12 @@ const Training = () => {
                 </div>
                 <div>
                   <label htmlFor="email">E-mail</label>
-                  <input type="email" id="email" {...register("email")} />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    {...register("email")}
+                  />
                   <p
                     className={`${errors.email ? "instruction" : "offscreen"}`}
                   >
