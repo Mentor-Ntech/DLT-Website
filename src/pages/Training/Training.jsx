@@ -122,10 +122,10 @@ const Training = () => {
 
         // Email messages and auto-reply
         emailjs.sendForm(
-          process.env.EMAILJS_SERVICE_ID,
-          process.env.EMAILJS_TEMPLATE_ID,
+          "service_2x6ysnd",
+          "template_ea9afpl",
           form.current,
-          process.env.EMAILJS_YOUR_PUBLIC_KEY
+          "yuJTYM5tb8JI-zLDg"
         );
         //   .then(
         //     (result) => {

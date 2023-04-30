@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 import MenuItems from "./MenuItems";
-import DropDown from "./DropDown";
 
 // Navbar Data
 const navLists = [
