@@ -6,8 +6,8 @@
   align-items: flex-start;
   color: var(--secondary-color);
   gap: 2rem;
-  height: 100vh;
-  padding: 10rem 3rem;
+  height: auto;
+  padding: 10rem 3rem 2rem;
   background-color: var(--primary-color);
 
   span {
@@ -150,21 +150,14 @@
 
   @media screen and (max-width: 1200px) {
     padding-top: 8rem;
-    height: 140vh;
   }
 
   @media screen and (max-width: 1024px) {
     padding-top: 10rem;
-    height: 100vh;
   }
 
   @media screen and (max-width: 912px) {
-    height: 35vh;
     padding-top: 8rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    height: 36vh;
   }
 
   @media screen and (max-width: 540px) {

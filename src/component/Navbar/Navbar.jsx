@@ -1,11 +1,16 @@
 import "./Navbar.scss";
 import { images } from "../../images";
+
 import { GrClose } from "react-icons/gr";
 import { FiMenu } from "react-icons/fi";
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
+
 import MenuItems from "./MenuItems";
+import DropDown from "./DropDown";
 
 // Navbar Data
 const navLists = [
@@ -41,6 +46,7 @@ const navMenuItems = [
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
   return (
     <nav className="navbar container">
@@ -80,11 +86,52 @@ const Navbar = () => {
                 </div>
                 <ul id="navItemLists">
                   {navMenuItems.map((navMenuItem) => (
-                    <MenuItems
-                      items={navMenuItem}
-                      key={navMenuItem.id}
-                      onClick={() => setToggle(false)}
-                    />
+                    <>
+                      {navMenuItem.submenu ? (
+                        <>
+                          <li>
+                            <div />
+                            <NavLink
+                              aria-expanded={dropdown ? "true" : "false"}
+                              onClick={() => setDropdown((prev) => !prev)}
+                            >
+                              {navMenuItem.title}{" "}
+                              <RiArrowDropDownLine className="menuArrow" />
+                            </NavLink>
+
+                            <aside
+                              id="menuDropdown"
+                              className={`menuDropdown ${
+                                dropdown ? "show" : ""
+                              }`}
+                            >
+                              <ul>
+                                {navMenuItem.submenu.map((submenu) => (
+                                  <li
+                                    key={submenu.id}
+                                    className="menuItems"
+                                    onClick={() => setToggle(false)}
+                                  >
+                                    <NavLink to={submenu.path}>
+                                      {submenu.title}
+                                    </NavLink>
+                                  </li>
+                                ))}
+                              </ul>
+                            </aside>
+                          </li>
+                        </>
+                      ) : (
+                        <>
+                          <li onClick={() => setToggle(false)}>
+                            <div />
+                            <NavLink to={navMenuItem.path}>
+                              {navMenuItem.title}
+                            </NavLink>
+                          </li>
+                        </>
+                      )}
+                    </>
                   ))}
                   <li onClick={() => setToggle(false)}>
                     <a href="#faqs">FAQs</a>

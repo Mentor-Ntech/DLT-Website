@@ -6,15 +6,15 @@ import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 const socials = [
   {
     icon: <AiOutlineTwitter />,
-    link: "https://www.twitter.com/",
+    link: "https://twitter.com/dlt_africa",
   },
   {
     icon: <AiFillFacebook />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/DLTAfrica",
   },
   {
     icon: <AiFillLinkedin />,
-    link: "https://www.LinkedIn.com/",
+    link: "https://www.linkedin.com/company/dlt-africa/",
   },
 ];
 
@@ -26,7 +26,7 @@ const Footer = () => {
           <h2 className="pText">Contact info:</h2>
           <div className="contactInfo">
             <a
-              href="info@dltafrica.io"
+              href="mailto:info@dltafrica.io"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,17 +44,19 @@ const Footer = () => {
             </a>
           </div>
           <div className="reachOut">
-            <h4>
-              Need to talk to directly ? Contact Us
-              <span className="outSp">&gt;</span>
-            </h4>
             <h5>Follow DLTAfrica:</h5>
 
             <div className="footerIcon">
               <ul className="item">
                 {socials.map((social, i) => (
                   <li key={i} className="itemLink">
-                    <a href={social.link}>{social.icon}</a>
+                    <a
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {social.icon}
+                    </a>
                   </li>
                 ))}
               </ul>

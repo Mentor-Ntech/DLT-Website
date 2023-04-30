@@ -1,4 +1,5 @@
 import "./Navbar.scss";
+import { NavLink } from "react-router-dom";
 
 const DropDown = ({ submenus, dropdown }) => {
   return (
@@ -6,7 +7,7 @@ const DropDown = ({ submenus, dropdown }) => {
       <ul>
         {submenus.map((submenu) => (
           <li key={submenu.id} className="menuItems">
-            <a href={submenu.path}>{submenu.title}</a>
+            <NavLink to={submenu.path}>{submenu.title}</NavLink>
           </li>
         ))}
       </ul>

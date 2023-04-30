@@ -128,7 +128,7 @@
   }
 
   .toggleMenu {
-    padding: 1.5rem;
+    padding: 0.5rem;
     width: 100%;
     position: fixed;
     background-image: url(../../assets/hero.png);
@@ -193,6 +193,27 @@
 
     @media screen and (min-width: 2000px) {
       padding: 5rem;
+    }
+
+    #menuDropdown {
+      display: none;
+      background-color: var(--white-color);
+      border-radius: 0.5rem;
+      max-width: 15rem;
+      margin-left: 6rem;
+
+      ul {
+        li {
+          margin: 0;
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    #menuDropdown.show {
+      display: block;
     }
   }
 
