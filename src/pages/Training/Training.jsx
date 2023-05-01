@@ -8,6 +8,7 @@ import emailjs from "@emailjs/browser";
 
 import { appClient } from "../../apis/appClient";
 import { Databases } from "appwrite";
+import { client } from "../../apis/client";
 
 const Training = () => {
   const form = useRef();
@@ -85,11 +86,52 @@ const Training = () => {
     resolver: yupResolver(schema),
   });
 
+  // Sanity for database backup
+  const dbBackup = (data) => {
+    const training = {
+      _type: "training",
+      firstname: data.firstname,
+      lastname: data.lastname,
+      stateOfOrigin: data.stateOfOrigin,
+      gender: data.gender,
+      dob: data.dob,
+      phoneNumber: data.phoneNumber,
+      acadQual: data.acadQual,
+      email: data.email,
+      exp: data.exp,
+      html: data.html,
+      css: data.css,
+      javascript: data.javascript,
+      noneOfTheAbove: data.noneOfTheAbove,
+    };
+
+    client.create(training).then(() => {
+      setSuccess(true);
+    });
+  };
+
+  const emailAutoReply = () => {
+    // Email messages and auto-reply
+    emailjs.sendForm(
+      process.env.EMAILJS_SERVICE_ID,
+      process.env.EMAILJS_TEMPLATE_ID,
+      form.current,
+      process.env.EMAILJS_YOUR_PUBLIC_KEY
+    );
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+  };
+
   // the function that will triggered the form submission
   const onSubmit = async (data) => {
-    // Register Cohorts
-    const join = {
-      //   _type: "join", // this for sanity
+    // Register Cohorts with unique id and email
+    const joinTraining = {
       firstname: data.firstname,
       lastname: data.lastname,
       stateOfOrigin: data.stateOfOrigin,
@@ -107,35 +149,22 @@ const Training = () => {
 
     const register = new Databases(appClient);
 
-    const newEmail = join.email;
+    // creating unique id from candidate mail
+    const newEmail = joinTraining.email;
     const uniqueID = newEmail.replace("@", "");
 
+    // creating documents for each candidate
     const res = await register
       .createDocument(
         process.env.REACT_APP_DATABASE_ID,
         process.env.REACT_APP_COLLECTION_ID,
         uniqueID,
-        join
+        joinTraining
       )
       .then((res) => {
         // console.log(res);
-
-        // Email messages and auto-reply
-        emailjs.sendForm(
-          process.env.EMAILJS_SERVICE_ID,
-          process.env.EMAILJS_TEMPLATE_ID,
-          form.current,
-          process.env.EMAILJS_YOUR_PUBLIC_KEY
-        );
-        //   .then(
-        //     (result) => {
-        //       console.log(result.text);
-        //     },
-        //     (error) => {
-        //       console.log(error.text);
-        //     }
-        //   );
-
+        dbBackup(data);
+        emailAutoReply();
         setSuccess(true);
       })
       .catch((err) => {
