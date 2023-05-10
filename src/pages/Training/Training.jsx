@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { useRef, useState } from "react";
 import { Navigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import { Loader } from "rsuite";
 
 import { appClient } from "../../apis/appClient";
 import { Databases } from "appwrite";
@@ -15,6 +16,7 @@ const Training = () => {
 
   const [success, setSuccess] = useState(false);
   const [errMsg, setErrMsg] = useState(false);
+  const [isLoading, setisLoading] = useState(false);
 
   //   schema that will validate form inputs
   const schema = yup.object().shape({
@@ -22,28 +24,29 @@ const Training = () => {
       .string()
 
       .required("First Name is required")
-      .matches(
-        /^(?=.{2,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$/,
-        "Only alphabets are allowed for this field "
-      )
       .min(
         2,
         "First Name must be at least 2 characters and not more than 40 characters"
       )
       .max(40)
-      .trim(),
-    lastname: yup
-      .string()
-      .required("Last Name is required")
       .matches(
         /^(?=.{2,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$/,
         "Only alphabets are allowed for this field "
       )
+
+      .trim(),
+    lastname: yup
+      .string()
+      .required("Last Name is required")
       .min(
         2,
         "Last Name must be at least 2 characters and not more than 40 characters"
       )
       .max(40)
+      .matches(
+        /^(?=.{2,40}$)[a-zA-Z]+(?:[-'\s][a-zA-Z]+)*$/,
+        "Only alphabets are allowed for this field "
+      )
       .trim(),
     stateOfOrigin: yup
       .string()
@@ -86,6 +89,24 @@ const Training = () => {
     resolver: yupResolver(schema),
   });
 
+  const emailAutoReply = () => {
+    // Email messages and auto-reply
+    emailjs.sendForm(
+      "service_2x6ysnd",
+      "template_ea9afpl",
+      form.current,
+      "yuJTYM5tb8JI-zLDg"
+    );
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+  };
+
   // Sanity for database backup
   const dbBackup = (data) => {
     const training = {
@@ -110,26 +131,11 @@ const Training = () => {
     });
   };
 
-  const emailAutoReply = () => {
-    // Email messages and auto-reply
-    emailjs.sendForm(
-      process.env.EMAILJS_SERVICE_ID,
-      process.env.EMAILJS_TEMPLATE_ID,
-      form.current,
-      process.env.EMAILJS_YOUR_PUBLIC_KEY
-    );
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
-  };
-
   // the function that will triggered the form submission
   const onSubmit = async (data) => {
+    setisLoading(true);
+
+    // console.log(data);
     // Register Cohorts with unique id and email
     const joinTraining = {
       firstname: data.firstname,
@@ -155,14 +161,10 @@ const Training = () => {
 
     // creating documents for each candidate
     const res = await register
-      .createDocument(
-        process.env.REACT_APP_DATABASE_ID,
-        process.env.REACT_APP_COLLECTION_ID,
-        uniqueID,
-        joinTraining
-      )
+      .createDocument("", "", uniqueID, joinTraining)
       .then((res) => {
         // console.log(res);
+        setisLoading(false);
         dbBackup(data);
         emailAutoReply();
         setSuccess(true);
@@ -284,7 +286,7 @@ const Training = () => {
 
                     <option value="PhD/Master Degree">PhD/Master Degree</option>
                     <option value="Bsc/Ba/HND">Bsc/Ba/HND</option>
-                    <option value="ND">ND</option>
+                    <option value="ND/NCE">ND/NCE</option>
                     <option value="Secondary School Certificate">
                       Secondary School Certificate
                     </option>
@@ -357,7 +359,9 @@ const Training = () => {
               </aside>
 
               <div className="btnCon">
-                <button className="genBtn">Submit</button>
+                <button className="genBtn">
+                  {isLoading ? <Loader size="xs" content="Sending" /> : "Send"}
+                </button>
               </div>
             </form>
             <p

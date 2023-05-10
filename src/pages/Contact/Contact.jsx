@@ -1,6 +1,8 @@
+import "./Contact.scss";
 import { useState } from "react";
 import { client } from "../../apis/client";
-import "./Contact.scss";
+
+import { Loader } from "rsuite";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -87,7 +89,7 @@ const Contact = () => {
             </article>
             <div className="btnCon">
               <button className="genBtn">
-                {isLoading ? "Loading..." : "Send"}
+                {isLoading ? <Loader size="xs" content="Sending" /> : "Send"}
               </button>
             </div>
           </form>
