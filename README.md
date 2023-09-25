@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Welcome to DLT Africa Official Website 👋
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![GitHub issues](https://img.shields.io/github/issues/Mentor-Ntech/DLT-Website)](https://github.com/Mentor-Ntech/DLT-Website/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Mentor-Ntech/DLT-Website)](https://github.com/Mentor-Ntech/DLT-Website/stargazers)
+[![GitHub license](https://img.shields.io/github/license/Mentor-Ntech/DLT-Website)](https://github.com/Mentor-Ntech/DLT-Website)
 
-## Available Scripts
+This is the repository for the DLT Africa Official Website.
 
-In the project directory, you can run:
+This repository serves as the home for the DLT Africa website, where contributions are welcomed through GitHub pull requests. In this document, we provide guidelines for contributing, contact information, and additional resources to facilitate your participation in this repository.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+If you've run into a problem or have a suggestion, browse the open [issues][is]
+before opening a new one. We use the following [label system][la] to organize
+our issues.
+<!-- 
+- ![][cr] for typos, broken links, and other quick fixes
+- ![][tr] for additions to the FAQ and Troubleshooting sections
+- ![][im] for revisions, rewrites, and larger improvements
+- ![][fe] for feedback on structure & content
+- ![][qu] for questions that can't be answered via documentation
+- ![][fi] for improvements and fixups related to the look and feel of the docs
+  site
+ - ![][gd] for good first issues
+  
+ -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# How to Contribute
 
-### `npm test`
+- [Welcome to DLT Africa Official Website 👋](#welcome-to-DLT-Africa-official-website-)
+- [How to Contribute](#how-to-contribute)
+  - [Get Started](#get-started)
+  - [Editing Content](#editing-content)
+  - [Learn More](#learn-more)
+  - [Contributing](#contributing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Get Started
 
-### `npm run build`
+- Begin your contribution journey by forking the repository or using our template. To ensure you have all the necessary tools, please install the required dependencies by running 'yarn' or 'npm'.
+- To initiate your server, run 'yarn build' or 'yarn start'. This will launch your development server, accessible at **localhost:3000**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Editing Content
+When adding new content, such as pages, please keep in mind that our website is built on React.js, Appwrite Cloud, Sanity CMS and SASS (SCSS). Familiarity with these technologies is essential for working with files and understanding how pages are routed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Learn More: To deepen your understanding of React.js, consult the following resources:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[React.js Documentation](https://legacy.reactjs.org/docs/getting-started.html): Explore React.js features and its API.
+[Learn React.js](https://legacy.reactjs.org/docs/getting-started.html#learn-react): Engage in an interactive React.js tutorial to enhance your skills.
+[Learn Sanity CMS](https://www.sanity.io/docs): Learn about Sanity CMS for content management logic on the website.
+To become more proficient in SCSS, refer to these resources:
 
-### `npm run eject`
+[SCSS Documentation](https://sass-lang.com/documentation/syntax/): Access comprehensive information about SCSS and its various components.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Also, Learn about Appwrite cloud through this resource; [Appwrite docs](https://appwrite.io/docs)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If you wish to contribute, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Comment under the issue you want to work on to express your interest.
+Create a new branch from the Staging' branch, naming it after yourself and the feature you're working on (e.g., DevBigEazi/Contact-section).
+Ensure you perform a rebase or pull before submitting your pull request back to the 'staging' branch.
+In your pull request, reference the issue you addressed by mentioning the issue number or URL.
+Contributions to this repository should be submitted through pull requests to the 'Staging' Branch. When opening a pull request, remember to tag [@DevBigEazi](https://github.com/DevBigEazi) for review."
 
-## Learn More
+[is]: https://github.com/Mentor-Ntech/DLT-Website/issues
+[la]: https://github.com/Mentor-Ntech/DLT-Website/labels
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
