@@ -12,12 +12,17 @@
 
   article {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    justify-content: space-between;
 
-    svg {
-      background-color: var(--light-secondary-color);
+    h4 {
+      width: 100%;
+      font-size: 17px;
+    }
+
+    .faqIcon {
+      background: transparent;
       font-size: 22px;
 
       @media screen and (min-width: 2000px) {
@@ -28,6 +33,7 @@
 
   .faqText {
     color: var(--dark-color);
+    font-size: 18px;
 
     @media screen and (min-width: 2000px) {
       font-size: 38px;
