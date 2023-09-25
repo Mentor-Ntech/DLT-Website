@@ -1,58 +1,88 @@
 .sectionCongrat {
-  background-image: url(../../assets/hero.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #e4ffe8;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 17px;
   width: 100%;
   height: 100vh;
-  font-size: 45px;
 
   h2 {
     color: var(--honey-color);
+    font-family: "Syne";
+    font-size: 36px;
+    font-weight: 700;
 
     @media screen and (min-width: 2000px) {
       font-size: 65px;
     }
 
-    @media screen and (max-width: 768px) {
-      font-size: 25px;
+    @media screen and (max-width: 540px) {
+      font-size: 22px;
     }
   }
 
   p {
-    margin: 1rem 0;
-    color: var(--primary-color);
+    font-family: Open "Sans";
+    font-size: 36px;
+    font-weight: 700;
+    color: #333934;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 65px;
+    }
 
     @media screen and (max-width: 768px) {
-      font-size: 25px;
+      font-size: 28px;
     }
 
-    @media screen and (min-width: 2000px) {
-      font-size: 65px;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: var(--honey-color);
-    font-size: 40px;
-
-    @media screen and (min-width: 2000px) {
-      font-size: 65px;
-    }
-
-    @media screen and (max-width: 376px) {
-      font-size: 15px;
+    @media screen and (max-width: 540px) {
+      font-size: 16px;
     }
   }
 
-  @media screen and (min-width: 2000px) {
-    font-size: 65px;
+  button {
+    display: flex;
+    width: 258px;
+    height: 57px;
+    padding: 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #1d700e;
+
+    @media screen and (min-width: 2000px) {
+      width: 558px;
+      height: 87px;
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 192px;
+      height: 57px;
+      padding: 12px 15px;
+    }
+
+    a {
+      color: #f3f3f2;
+      font-family: Open "Sans";
+      font-size: 18px;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      @media screen and (min-width: 2000px) {
+        font-size: 36px;
+      }
+
+      @media screen and (max-width: 540px) {
+        font-size: 14px;
+      }
+    }
   }
 }

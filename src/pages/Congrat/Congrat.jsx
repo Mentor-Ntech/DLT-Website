@@ -5,10 +5,11 @@ const Congrat = () => {
     <div className="sectionCongrat">
       <h2>CONGRATULATIONS!!!</h2>
       <p>
-        Your application has been successfully submitted. <br /> Check your
-        email for further directory.
+      Your application has been successfully submitted.
       </p>
-      <a href="/">Back to homepage</a>
+      <button>
+        <a href="/payments">Proceed to Payment</a>
+      </button>
     </div>
   );
 };
