@@ -7,6 +7,7 @@ import {
   OurTeam,
   NotFound,
   Incubation,
+
 } from "./pages";
 import Home from "./Home/Home";
 import { Layout, HomeLayout } from "./component/index";
