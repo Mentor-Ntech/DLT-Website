@@ -1,58 +1,345 @@
 .sectionCongrat {
-  background-image: url(../../assets/hero.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #e4ffe8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  gap: 17px;
   width: 100%;
   height: 100vh;
-  font-size: 45px;
 
-  h2 {
-    color: var(--honey-color);
+  .payments {
+    background-color: #e4ffe8;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 
-    @media screen and (min-width: 2000px) {
-      font-size: 65px;
+    .paymentsOptions {
+      display: flex;
+      flex-direction: column;
+      background-color: #eeffef;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+
+      width: 772px;
+
+      z-index: 5;
+      height: 100vh;
+
+      @media screen and (max-width: 768px) {
+        width: 593px;
+      }
+
+      @media screen and (max-width: 540px) {
+        width: 100%;
+      }
+
+      .closeIcon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 95px;
+        margin-right: 18px;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 123px;
+          margin-right: 50px;
+        }
+
+        @media screen and (max-width: 540px) {
+          margin-top: 46px;
+          margin-right: 31px;
+        }
+
+        svg {
+          height: 24px;
+          width: 24px;
+          cursor: pointer;
+
+          @media screen and (min-width: 2000px) {
+            height: 48px;
+            width: 48px;
+          }
+
+          @media screen and (max-width: 540px) {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+
+      .paymentsOptionsDetails {
+        width: 627px;
+        margin: 61px 53px 295px 50px;
+
+        @media screen and (min-width: 2000px) {
+          width: 890px;
+        }
+
+        @media screen and (max-width: 768px) {
+          width: 493px;
+          margin: 33px 50px 314px;
+        }
+
+        @media screen and (max-width: 540px) {
+          width: 100%;
+          margin: 27px 10px 123px;
+        }
+
+        .titles {
+          width: 519px;
+
+          @media screen and (min-width: 2000px) {
+            width: 890px;
+          }
+
+          @media screen and (max-width: 768px) {
+            width: 352px;
+          }
+
+          @media screen and (max-width: 540px) {
+            width: 100%;
+          }
+
+          h3 {
+            color: #123e31;
+            font-family: Open "Sans";
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 27px;
+            text-align: left;
+
+            @media screen and (min-width: 2000px) {
+              font-size: 68px;
+            }
+
+            @media screen and (max-width: 768px) {
+              font-size: 28px;
+            }
+
+            @media screen and (max-width: 540px) {
+              font-size: 22px;
+            }
+          }
+
+          p {
+            color: #919692;
+            font-family: "Source Sans Pro";
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 120%;
+            margin-bottom: 41px;
+            text-align: left;
+            width: 100%;
+
+            @media screen and (min-width: 2000px) {
+              width: 100%;
+            }
+
+            @media screen and (max-width: 768px) {
+              width: 352px;
+            }
+
+            @media screen and (max-width: 540px) {
+              width: 290px;
+            }
+
+            @media screen and (max-width: 360px) {
+              width: 265px;
+            }
+          }
+        }
+      }
+
+      .paymentsCards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 45px;
+
+        @media screen and (max-width: 768px) {
+          column-gap: 19px;
+        }
+
+        @media screen and (max-width: 540px) {
+          gap: 45px;
+          flex-direction: column;
+        }
+
+        div {
+          display: flex;
+          width: 291px;
+          height: 277px;
+          padding: 20px 34px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          text-align: left;
+          gap: 27px;
+          border-radius: 20px;
+          border: 1px solid #1e251f;
+          background: #bde9c4;
+
+          @media screen and (max-width: 768px) {
+            width: 237px;
+            height: 226px;
+            padding: 16px 27px;
+            gap: 22px;
+          }
+
+          @media screen and (max-width: 540px) {
+            width: 291px;
+            height: 277px;
+            padding: 20px 34px;
+            gap: 27px;
+          }
+
+          @media screen and (max-width: 360px) {
+            width: 237px;
+            height: 246px;
+            padding: 16px 27px;
+          }
+
+          h4 {
+            color: #123e31;
+            font-family: "Source Sans Pro";
+            font-size: 20px;
+            font-weight: 600;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+              font-size: 16px;
+            }
+
+            @media screen and (max-width: 540px) {
+              font-size: 20px;
+            }
+          }
+
+          p {
+            color: #123e31;
+            font-family: Open "Sans";
+            font-size: 32px;
+            font-weight: 700;
+
+            @media screen and (max-width: 768px) {
+              font-size: 26px;
+            }
+
+            @media screen and (max-width: 540px) {
+              font-size: 32px;
+            }
+          }
+
+          small {
+            color: #eeffef;
+            font-family: "Source Sans Pro";
+            font-size: 14px;
+            font-weight: 600;
+
+            @media screen and (max-width: 768px) {
+              font-size: 11px;
+            }
+
+            @media screen and (max-width: 540px) {
+              font-size: 14px;
+            }
+          }
+
+          button {
+            width: 203px;
+            color: #c5cdc7;
+            font-family: Open "Sans";
+            font-size: 18px;
+            font-weight: 700;
+
+            @media screen and (max-width: 768px) {
+              width: 165px;
+              height: 46px;
+              padding: 9px 12px;
+              font-size: 11px;
+            }
+
+            @media screen and (max-width: 540px) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
     }
 
-    @media screen and (max-width: 768px) {
-      font-size: 25px;
-    }
-  }
-
-  p {
-    margin: 1rem 0;
-    color: var(--primary-color);
-
-    @media screen and (max-width: 768px) {
-      font-size: 25px;
+    .congratContainer {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      position: relative;
     }
 
-    @media screen and (min-width: 2000px) {
-      font-size: 65px;
+    h2 {
+      color: var(--honey-color);
+      font-family: "Syne";
+      font-size: 36px;
+      font-weight: 700;
+
+      @media screen and (min-width: 2000px) {
+        font-size: 65px;
+      }
+
+      @media screen and (max-width: 540px) {
+        font-size: 22px;
+      }
     }
-  }
 
-  a {
-    text-decoration: none;
-    color: var(--honey-color);
-    font-size: 40px;
+    p {
+      font-family: Open "Sans";
+      font-size: 36px;
+      font-weight: 700;
+      color: #333934;
 
-    @media screen and (min-width: 2000px) {
-      font-size: 65px;
+      @media screen and (min-width: 2000px) {
+        font-size: 65px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+      }
+
+      @media screen and (max-width: 540px) {
+        font-size: 16px;
+      }
     }
 
-    @media screen and (max-width: 376px) {
-      font-size: 15px;
-    }
-  }
+    button {
+      display: flex;
+      width: 258px;
+      height: 57px;
+      padding: 11px;
+      justify-content: center;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: #1d700e;
+      color: #f3f3f2;
+      font-family: Open "Sans";
+      font-size: 18px;
+      font-weight: 700;
 
-  @media screen and (min-width: 2000px) {
-    font-size: 65px;
+      @media screen and (min-width: 2000px) {
+        width: 558px;
+        height: 87px;
+        font-size: 36px;
+      }
+
+      @media screen and (max-width: 540px) {
+        width: 192px;
+        height: 57px;
+        padding: 12px 15px;
+        font-size: 14px;
+      }
+    }
   }
 }
