@@ -49,7 +49,7 @@ const Congrat = () => {
               </div>
               <div className="paymentsCards">
                 {paymentData.map((item, i) => (
-                  <div>
+                  <div key={i}>
                     <h4>{item.title}</h4>
                     <p>{item.price}</p>
                     <small>{item.type}</small>
