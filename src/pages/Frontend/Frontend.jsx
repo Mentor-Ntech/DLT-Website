@@ -1,7 +1,5 @@
 const Frontend = () => {
-  return (
-    <>Frontend</>
-  )
-}
+  return <>Frontend</>;
+};
 
-export default Frontend
+export default Frontend;
