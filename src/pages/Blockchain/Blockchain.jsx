@@ -1,5 +1,9 @@
 const Blockchain = () => {
-  return <>Blockchain</>;
+  return (
+    <>
+      <div>Blockchain</div>
+    </>
+  );
 };
 
 export default Blockchain;
