@@ -1,7 +1,8 @@
 const Blockchain = () => {
   return (
     <>
-      <div>Blockchain</div>
+      {/* Just to see the page */}
+      <h6 style={{ paddingTop: "155px" }}>Blockchain</h6>
     </>
   );
 };
