@@ -1,21 +1,29 @@
 .courses {
-  padding: 8rem 3rem;
+  padding: 132px 50px;
   background: #eeffef;
 
+  @media screen and (max-width: 390px) {
+    padding: 91px 10px;
+  }
+
   h2 {
-    color: #123e31;
-    font-family: Open Sans;
+    color: var(--primary-color);
+    font-family: Open "Sans";
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
   }
 
   .coursesOptions {
     margin-top: 65px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px 21px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 390px) {
+      margin-top: 84px;
+    }
   }
 
   .coursesCard {
@@ -23,6 +31,7 @@
     display: flex;
     text-align: left;
     width: 566px;
+    height: 474px;
     padding-bottom: 21px;
     flex-direction: column;
     align-items: flex-start;
@@ -35,6 +44,34 @@
       text-decoration: none;
     }
 
+    @media screen and (max-width: 768px) {
+      width: 510px;
+      height: auto;
+      gap: 7px;
+
+      img {
+        width: 510px;
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 370px;
+
+      img {
+        width: 370px;
+      }
+    }
+
+    @media screen and (max-width: 390px) {
+      width: 100%;
+      gap: 25px;
+      gap: 3px;
+
+      img {
+        width: 100%;
+      }
+    }
+
     img {
       border-radius: 20px 20px 0 0;
       -webkit-border-radius: 20px 20px 0 0;
@@ -44,8 +81,13 @@
     }
 
     h4,
-    small {
+    small,
+    div {
       margin: 0 32px;
+
+      @media screen and (max-width: 540px) {
+        margin: 0 12px;
+      }
     }
 
     h4 {
@@ -54,6 +96,20 @@
       font-family: Open "Sans";
       font-size: 32px;
       font-weight: 700;
+
+      @media screen and (max-width: 540px) {
+        width: 352px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 18px;
+      }
     }
 
     small {
@@ -62,6 +118,23 @@
       font-family: "Source Sans Pro";
       font-size: 16px;
       font-weight: 400;
+
+      @media screen and (max-width: 540px) {
+        width: 312px;
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 312px;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: 275px;
+      }
+
+      @media screen and (max-width: 310px) {
+        width: 250px;
+      }
     }
 
     div {
@@ -69,7 +142,6 @@
       column-gap: 9px;
       justify-content: center;
       align-items: center;
-      margin: 0 32px;
 
       svg {
         width: 16px;
@@ -84,6 +156,10 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+
+        @media screen and (max-width: 390px) {
+          font-size: 12px;
+        }
       }
     }
   }
