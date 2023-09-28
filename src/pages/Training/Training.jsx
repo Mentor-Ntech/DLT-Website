@@ -74,7 +74,9 @@ const Training = () => {
       )
       .trim(),
     exp: yup.string().required("Let us know if you have a coding experience"),
-    courseSelected: yup.string().required("Please select a course of your choice"),
+    courseSelected: yup
+      .string()
+      .required("Please select a course of your choice"),
     html: yup.string(),
     css: yup.string(),
     javascript: yup.string(),
@@ -92,12 +94,7 @@ const Training = () => {
 
   const emailAutoReply = () => {
     // Email messages and auto-reply
-    emailjs.sendForm(
-      "",
-      "",
-      form.current,
-      ""
-    );
+    emailjs.sendForm("", "", form.current, "");
   };
 
   // Sanity for database backup
@@ -156,12 +153,7 @@ const Training = () => {
 
     // creating documents for each candidate
     const res = await register
-      .createDocument(
-        "",
-        "",
-        uniqueID,
-        joinTraining
-      )
+      .createDocument("", "", uniqueID, joinTraining)
       .then((res) => {
         console.log(res);
         setisLoading(false);
@@ -171,14 +163,13 @@ const Training = () => {
       })
       .catch((err) => {
         if (!err?.res || err?.res.status === 409) {
-            console.log(err)
-            setisLoading(false);
-            setErrMsg("No Server Response or Email Already exists")
+          console.log(err);
+          setisLoading(false);
+          setErrMsg("No Server Response or Email Already exists");
+        } else {
+          setisLoading(false);
+          setErrMsg("Registration Failed");
         }
-        else {
-            setisLoading(false);
-            setErrMsg("Registration Failed")
-        };
       });
 
     return res;
@@ -338,7 +329,11 @@ const Training = () => {
 
                 <div>
                   <label htmlFor="courseSelected">Course Selected</label>
-                  <select name="courseSelected" id="courseSelected" {...register("courseSelected")}>
+                  <select
+                    name="courseSelected"
+                    id="courseSelected"
+                    {...register("courseSelected")}
+                  >
                     <option value="">select an option</option>
 
                     <option value="Frontend Dev">Frontend Web Dev</option>
@@ -346,7 +341,11 @@ const Training = () => {
                     <option value="Product Design">Product Design</option>
                     <option value="Blockchain Dev">Blockchain Dev</option>
                   </select>
-                  <p className={`${errors.courseSelected ? "instruction" : "offscreen"}`}>
+                  <p
+                    className={`${
+                      errors.courseSelected ? "instruction" : "offscreen"
+                    }`}
+                  >
                     {errors.courseSelected?.message}
                   </p>
                 </div>
@@ -394,7 +393,7 @@ const Training = () => {
           </div>
         </>
       ) : (
-        <Navigate to="/congrat" replace={true} />
+        <Navigate to="/success/congrat" replace={true} />
       )}
     </section>
   );
