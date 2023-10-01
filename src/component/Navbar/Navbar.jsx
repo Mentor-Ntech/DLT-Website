@@ -13,15 +13,13 @@ import MenuItems from "./MenuItems";
 
 // Navbar Data
 const navLists = [
-  // { title: "About Us", id: 2, path: "/about" },
-  //   { title: "Projects", id: 1, path: "/projects" },
-  { title: "Contact", id: 2, path: "/contact" },
-  { title: "Our Team", id: 3, path: "/team" },
+  { title: "Courses", id: 2, path: "/course" },
+  { title: "BlockChain", id: 3, path: "/blockChain" },
   {
-    title: "Join Us",
+    title: "Apply for Incubation",
     id: 5,
     submenu: [
-      { title: "Training", path: "/training", id: 5.1 },
+      // { title: "Training", path: "/training", id: 5.1 },
       { title: "Incubation Program", path: "/incubation", id: 5.2 },
     ],
   },
@@ -29,13 +27,13 @@ const navLists = [
 
 const navMenuItems = [
   { title: "Home", id: 1, path: "/" },
-  { title: "Contact", id: 2, path: "/contact" },
-  { title: "Our Team", id: 3, path: "/team" },
+  { title: "Course", id: 2, path: "/course" },
+  { title: "BlockChain", id: 3, path: "/blockchain" },
   {
-    title: "Join Us",
+    title: "Apply for Incubation",
     id: 4,
     submenu: [
-      { title: "Training", path: "/training", id: 4.1 },
+      // { title: "Training", path: "/training", id: 4.1 },
       { title: "Incubation Program", path: "/incubation", id: 4.2 },
     ],
   },
@@ -60,7 +58,7 @@ const Navbar = () => {
               {navLists.map((navList) => (
                 <MenuItems items={navList} key={navList.id} />
               ))}
-              <li>
+              {/* <li>
                 <div />
                 <a href="#faqs">
                   FAQ<span>s</span>
@@ -69,7 +67,7 @@ const Navbar = () => {
               <li>
                 <div />
                 <a href="#about">About Us</a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="navbarMenu">
@@ -132,12 +130,12 @@ const Navbar = () => {
                       )}
                     </>
                   ))}
-                  <li onClick={() => setToggle(false)}>
+                  {/* <li onClick={() => setToggle(false)}>
                     <a href="#faqs">FAQs</a>
                   </li>
                   <li onClick={() => setToggle(false)}>
                     <a href="#about">About Us</a>
-                  </li>
+                  </li> */}
                 </ul>
               </motion.div>
             )}
