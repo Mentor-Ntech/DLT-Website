@@ -9,6 +9,7 @@ import Shola from "../assets/Shola.webp";
 import Soliu from "../assets/Soliu.webp";
 import step from "../assets/step.png";
 import dltlogo from "../assets/dlt-logo.png";
+//import courseSec from "../assets/course-sec.png";
 
 export default {
   Bola,
@@ -22,4 +23,5 @@ export default {
   Soliu,
   step,
   dltlogo,
+  // courseSec
 };

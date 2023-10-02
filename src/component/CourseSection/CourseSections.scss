@@ -1,0 +1,102 @@
+.courseCon {
+  padding: 4rem;
+  width: 1253px;
+  height: 100vh;
+  background: #eeffef;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.courseBody article {
+  //   padding: 4rem;
+  display: flex;
+  width: 571px;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.courseBody article h4 {
+  color: #123e31;
+  font-family: Open Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 309px;
+  flex-shrink: 0;
+}
+
+.courseBody article p {
+  color: var(--neutral-200, #919692);
+  font-family: Source Sans Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+  width: 571px;
+  flex-shrink: 0;
+}
+
+.courseBody article button {
+  display: flex;
+  //   width: 180px;
+  height: 57px;
+  padding: 12px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 10px;
+  //   background: #1d700e;
+}
+
+.btn1 {
+  color: #f3f3f2;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  background: #1d700e;
+  display: flex;
+  width: 180px;
+  height: 57px;
+  padding: 12px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn2 {
+  color: #1d700e;
+  display: flex;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 294px;
+  height: 57px;
+  padding: 12px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 10px;
+  border: 1px solid #1d700e;
+}
+
+.btn {
+  display: flex;
+  align-items: flex-start;
+  gap: 39px;
+}
+
+.imageBox {
+  width: 519px;
+  height: 408px;
+}
