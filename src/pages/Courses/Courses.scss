@@ -1,0 +1,166 @@
+.courses {
+  padding: 132px 50px;
+  background: #eeffef;
+
+  @media screen and (max-width: 390px) {
+    padding: 91px 10px;
+  }
+
+  h2 {
+    color: var(--primary-color);
+    font-family: Open "Sans";
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .coursesOptions {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px 21px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 390px) {
+      margin-top: 84px;
+    }
+  }
+
+  .coursesCard {
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    width: 566px;
+    height: 474px;
+    padding-bottom: 21px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    border-radius: 20px;
+    background: #1e251f;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 510px;
+      height: auto;
+      gap: 7px;
+
+      img {
+        width: 510px;
+      }
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 370px;
+
+      img {
+        width: 370px;
+      }
+    }
+
+    @media screen and (max-width: 390px) {
+      width: 100%;
+      gap: 25px;
+      gap: 3px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    img {
+      border-radius: 20px 20px 0 0;
+      -webkit-border-radius: 20px 20px 0 0;
+      -moz-border-radius: 20px 20px 0 0;
+      -ms-border-radius: 20px 20px 0 0;
+      -o-border-radius: 20px 20px 0 0;
+    }
+
+    h4,
+    small,
+    div {
+      margin: 0 32px;
+
+      @media screen and (max-width: 540px) {
+        margin: 0 12px;
+      }
+    }
+
+    h4 {
+      width: 502px;
+      color: #fbfaf5;
+      font-family: Open "Sans";
+      font-size: 32px;
+      font-weight: 700;
+
+      @media screen and (max-width: 540px) {
+        width: 352px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 90%;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 18px;
+      }
+    }
+
+    small {
+      width: 423px;
+      color: #919692;
+      font-family: "Source Sans Pro";
+      font-size: 16px;
+      font-weight: 400;
+
+      @media screen and (max-width: 540px) {
+        width: 312px;
+        font-size: 12px;
+      }
+
+      @media screen and (max-width: 390px) {
+        width: 312px;
+      }
+
+      @media screen and (max-width: 375px) {
+        width: 275px;
+      }
+
+      @media screen and (max-width: 310px) {
+        width: 250px;
+      }
+    }
+
+    div {
+      display: flex;
+      column-gap: 9px;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        color: #34d1a1;
+      }
+
+      span {
+        color: #919692;
+        font-family: "Source Sans Pro";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media screen and (max-width: 390px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

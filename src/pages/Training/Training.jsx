@@ -70,10 +70,13 @@ const Training = () => {
       .required("Email is required")
       .matches(
         /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
-        "Your email address must look like these 'example@gmail.com'"
+        "Your email address must look like these 'example@gmail.com' or example@dltafrica.io"
       )
       .trim(),
     exp: yup.string().required("Let us know if you have a coding experience"),
+    courseSelected: yup
+      .string()
+      .required("Please select a course of your choice"),
     html: yup.string(),
     css: yup.string(),
     javascript: yup.string(),
@@ -91,26 +94,13 @@ const Training = () => {
 
   const emailAutoReply = () => {
     // Email messages and auto-reply
-    emailjs.sendForm(
-      "service_2x6ysnd",
-      "template_ea9afpl",
-      form.current,
-      "yuJTYM5tb8JI-zLDg"
-    );
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs.sendForm("", "", form.current, "");
   };
 
   // Sanity for database backup
   const dbBackup = (data) => {
     const training = {
-      _type: "training",
+      _type: "trainingc4",
       firstname: data.firstname,
       lastname: data.lastname,
       stateOfOrigin: data.stateOfOrigin,
@@ -120,6 +110,7 @@ const Training = () => {
       acadQual: data.acadQual,
       email: data.email,
       exp: data.exp,
+      courseSelected: data.courseSelected,
       html: data.html,
       css: data.css,
       javascript: data.javascript,
@@ -147,6 +138,7 @@ const Training = () => {
       acadQual: data.acadQual,
       email: data.email,
       exp: data.exp,
+      courseSelected: data.courseSelected,
       html: data.html,
       css: data.css,
       javascript: data.javascript,
@@ -163,16 +155,21 @@ const Training = () => {
     const res = await register
       .createDocument("", "", uniqueID, joinTraining)
       .then((res) => {
-        // console.log(res);
+        console.log(res);
         setisLoading(false);
         dbBackup(data);
-        emailAutoReply();
+        // emailAutoReply();
         setSuccess(true);
       })
       .catch((err) => {
-        if (!err?.res || err?.res.status === 409)
+        if (!err?.res || err?.res.status === 409) {
+          console.log(err);
+          setisLoading(false);
           setErrMsg("No Server Response or Email Already exists");
-        else setErrMsg("Registration Failed");
+        } else {
+          setisLoading(false);
+          setErrMsg("Registration Failed");
+        }
       });
 
     return res;
@@ -329,6 +326,29 @@ const Training = () => {
                     {errors.exp?.message}
                   </p>
                 </div>
+
+                <div>
+                  <label htmlFor="courseSelected">Course Selected</label>
+                  <select
+                    name="courseSelected"
+                    id="courseSelected"
+                    {...register("courseSelected")}
+                  >
+                    <option value="">select an option</option>
+
+                    <option value="Frontend Dev">Frontend Web Dev</option>
+                    <option value="Full stack Dev">Full stack Web Dev</option>
+                    <option value="Product Design">Product Design</option>
+                    <option value="Blockchain Dev">Blockchain Dev</option>
+                  </select>
+                  <p
+                    className={`${
+                      errors.courseSelected ? "instruction" : "offscreen"
+                    }`}
+                  >
+                    {errors.courseSelected?.message}
+                  </p>
+                </div>
               </article>
 
               <aside>
@@ -373,7 +393,7 @@ const Training = () => {
           </div>
         </>
       ) : (
-        <Navigate to="/congrat" replace={true} />
+        <Navigate to="/success/congrat" replace={true} />
       )}
     </section>
   );

@@ -9,7 +9,7 @@ const About = () => {
   return (
     <section className="about container" id="about">
       <div className="imgContainer">
-        <img src={images.code} alt="code on vscode image" />
+        <img src={images.code} alt="code on vscode" />
       </div>
       <div className="aboutTextCon">
         <h2>

@@ -7,36 +7,22 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import MenuItems from "./MenuItems";
 
 // Navbar Data
 const navLists = [
-  { title: "Courses", id: 2, path: "/course" },
-  { title: "BlockChain", id: 3, path: "/blockChain" },
-  {
-    title: "Apply for Incubation",
-    id: 5,
-    submenu: [
-      // { title: "Training", path: "/training", id: 5.1 },
-      { title: "Incubation Program", path: "/incubation", id: 5.2 },
-    ],
-  },
+  { title: "Courses", id: 2, path: "/our-courses" },
+  { title: "BlockChain", id: 3, path: "/our-courses/blockchain-dev" },
 ];
 
 const navMenuItems = [
   { title: "Home", id: 1, path: "/" },
-  { title: "Course", id: 2, path: "/course" },
-  { title: "BlockChain", id: 3, path: "/blockchain" },
-  {
-    title: "Apply for Incubation",
-    id: 4,
-    submenu: [
-      // { title: "Training", path: "/training", id: 4.1 },
-      { title: "Incubation Program", path: "/incubation", id: 4.2 },
-    ],
-  },
+  { title: "Courses", id: 2, path: "/our-courses" },
+  { title: "BlockChain", id: 3, path: "/our-courses/blockchain-dev" },
+  { title: "Apply for incubation", id: 3, path: "/incubation" },
+
   //   { title: "FAQs", id: 5, path: "/faqs" },
   //   { title: "About Us", id: 6, path: "/about" },
 ];
@@ -67,8 +53,11 @@ const Navbar = () => {
               <li>
                 <div />
                 <a href="#about">About Us</a>
-              </li> */}
+              </li> */} 
             </ul>
+            <button className="navButton">
+                  <Link to="/incubation">Apply For Incubation</Link>  
+            </button>
           </div>
           <div className="navbarMenu">
             <FiMenu onClick={() => setToggle(true)} />
@@ -78,6 +67,7 @@ const Navbar = () => {
                 transition={{ duration: 0.85, ease: "easeOut" }}
                 className="toggleMenu"
               >
+                
                 <div>
                   <GrClose onClick={() => setToggle(false)} />
                 </div>
@@ -94,7 +84,9 @@ const Navbar = () => {
                             >
                               {navMenuItem.title}{" "}
                               <RiArrowDropDownLine className="menuArrow" />
+
                             </NavLink>
+
 
                             <aside
                               id="menuDropdown"
@@ -113,11 +105,15 @@ const Navbar = () => {
                                       {submenu.title}
                                     </NavLink>
                                   </li>
+
+                                  
                                 ))}
                               </ul>
                             </aside>
                           </li>
+                    
                         </>
+                        
                       ) : (
                         <>
                           <li onClick={() => setToggle(false)}>
@@ -126,6 +122,9 @@ const Navbar = () => {
                               {navMenuItem.title}
                             </NavLink>
                           </li>
+                          {/* <button>Apply For Incubation</button> */}
+
+
                         </>
                       )}
                     </>

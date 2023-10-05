@@ -2,17 +2,40 @@
   background-color: var(--black-color);
   padding: 5rem 2rem;
 
- 
   .footerBox {
     display: flex;
-    width: 1163px;
+    width: 100%;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-start;
     gap: 106px 80px;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 1024px) {
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      gap: 90px 60px;
+    }
+
+    @media screen and (max-width: 960px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      padding-left: 4rem;
+    }
+
+    @media screen and (max-width: 760px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      // justify-content: center;
+      // align-items: center;
+      
+    }
   }
-  
+
   .missionCon {
     display: flex;
     width: 291px;
@@ -22,7 +45,7 @@
     flex-shrink: 0;
     flex-wrap: wrap;
   }
-  
+
   .mission {
     color: #1d700e;
     font-family: Open Sans;
@@ -31,7 +54,7 @@
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .missionText {
     color: #eeffef;
     font-family: Source Sans Pro;
@@ -40,7 +63,7 @@
     font-weight: 400;
     line-height: normal;
   }
-  
+
   .quickCon {
     display: flex;
     width: 145px;
@@ -50,7 +73,7 @@
     gap: 21px;
     flex-shrink: 0;
   }
-  
+
   .quick {
     color: #1d700e;
     font-family: Open Sans;
@@ -59,7 +82,7 @@
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .contactCon {
     display: flex;
     width: 264px;
@@ -69,7 +92,7 @@
     gap: 21px;
     flex-shrink: 0;
   }
-  
+
   .contactText {
     color: #1d700e;
     font-family: Open Sans;
@@ -78,7 +101,7 @@
     font-weight: 700;
     line-height: normal;
   }
-  
+
   .contactInfo {
     color: #eeffef;
     font-family: Open Sans;
@@ -87,9 +110,9 @@
     font-weight: 700;
     line-height: normal;
   }
-  
-  ul, li {
-  
+
+  ul,
+  li {
     color: #eeffef;
     font-family: Source Sans Pro;
     font-size: 18px;
@@ -99,7 +122,7 @@
     text-decoration: none;
     list-style: none;
   }
-  
+
   li {
     margin-right: 2rem;
     font-family: Source Sans Pro;
@@ -110,46 +133,46 @@
     div {
       width: 10px;
       height: 10px;
-  
+
       margin-bottom: 5px;
       background: transparent;
-  
+
       border-radius: 50px;
     }
-  
+
     a {
       transition: all 0.2s ease-in-out;
       -webkit-transition: all 0.5s ease-in-out;
       -moz-transition: all 0.5s ease-in-out;
       -ms-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
-  
+
       text-decoration: none;
       color: white;
       font-weight: 400;
       font-size: 1.3rem;
-  
+
       &:hover {
         color: var(--white-color);
         text-decoration: none;
       }
-  
+
       @media screen and (min-width: 2000px) {
         font-size: 2.3rem;
       }
     }
-  
+
     span {
       text-transform: lowercase;
     }
-  
+
     &:hover {
       div {
         background: var(--white-color);
       }
     }
   }
-  
+
   .offAddress {
     color: #eeffef;
     font-family: Source Sans Pro;
@@ -159,20 +182,19 @@
     line-height: normal;
     margin-bottom: 21px;
   }
-  
-  .contactInfo a,:visited {
+
+  .contactInfo a,
+  :visited {
     color: white;
     text-decoration: none;
     text-decoration: none;
     list-style: none;
   }
-  
+
   .contactInfo a:hover {
     color: #bdfcc1;
     text-decoration: none;
   }
-  
-  
 
   .footCon {
     display: flex;
@@ -201,10 +223,7 @@
         }
       }
     }
-
   }
-
-  
 
   .footerIcon {
     width: 85%;
@@ -212,6 +231,14 @@
     margin-left: 5rem;
     margin-right: 10rem;
     border-top: 0.5px solid white;
+
+    @media screen and (max-width: 560px) {
+      width: 85%;
+      margin-left: 2.5rem;
+      margin-right: 7rem;
+    
+    }
+
   }
 
   .item {
@@ -220,6 +247,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+
+   
   }
 
   .itemLink {
@@ -256,6 +286,8 @@
       height: 75px;
       width: 75px;
     }
+
+    
   }
 
   .itemLink:hover {
@@ -278,9 +310,8 @@
     -o-transition: all 0.8s ease-out;
 
     
-}
+  }
 
-  
   .dltLogo {
     display: flex;
     flex-direction: column;
@@ -317,5 +348,3 @@
     overflow: hidden;
   }
 }
-
-

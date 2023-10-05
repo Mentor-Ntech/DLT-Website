@@ -25,6 +25,8 @@ const OurTeam = () => {
       });
   }, []);
 
+  const loading = <Loader size="lg" content="Loading..." />;
+
   return (
     <section className="ourTeam">
       <h2>OUR TEAM</h2>
@@ -37,9 +39,7 @@ const OurTeam = () => {
             marginTop: 100,
           }}
         >
-          <h2>
-            <Loader size="lg" inverse center content="Loading..." />
-          </h2>
+          <h2>{loading}</h2>
         </div>
       ) : (
         <div className="profileContainer">
@@ -51,11 +51,11 @@ const OurTeam = () => {
               <p className="pText">"{team.description}"</p>
 
               <div className="socialIcon">
-                <a href={team.linkedinLink} target="_blank">
+                <a href={team.linkedinLink} target="_blank" rel="noreferrer">
                   <FaLinkedinIn />
                 </a>
 
-                <a href={team.twitterLink} target="_blank">
+                <a href={team.twitterLink} target="_blank" rel="noreferrer">
                   <FaTwitter />
                 </a>
               </div>
