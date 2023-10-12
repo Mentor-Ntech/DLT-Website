@@ -1,10 +1,9 @@
-import React from "react";
+import { FullStack } from "../../component";
 
 const Fullstack = () => {
   return (
     <>
-      {/* Just to see the page */}
-      <h6 style={{ paddingTop: "155px" }}>Fullstack</h6>
+      <FullStack />
     </>
   );
 };
