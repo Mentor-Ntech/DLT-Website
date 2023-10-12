@@ -7,38 +7,22 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import MenuItems from "./MenuItems";
 
 // Navbar Data
 const navLists = [
-  // { title: "About Us", id: 2, path: "/about" },
-  //   { title: "Projects", id: 1, path: "/projects" },
-  { title: "Contact", id: 2, path: "/contact" },
-  { title: "Our Team", id: 3, path: "/team" },
-  {
-    title: "Join Us",
-    id: 5,
-    submenu: [
-      { title: "Training", path: "/training", id: 5.1 },
-      { title: "Incubation Program", path: "/incubation", id: 5.2 },
-    ],
-  },
+  { title: "Courses", id: 2, path: "/our-courses" },
+  { title: "BlockChain", id: 3, path: "/our-courses/blockchain-dev" },
 ];
 
 const navMenuItems = [
   { title: "Home", id: 1, path: "/" },
-  { title: "Contact", id: 2, path: "/contact" },
-  { title: "Our Team", id: 3, path: "/team" },
-  {
-    title: "Join Us",
-    id: 4,
-    submenu: [
-      { title: "Training", path: "/training", id: 4.1 },
-      { title: "Incubation Program", path: "/incubation", id: 4.2 },
-    ],
-  },
+  { title: "Courses", id: 2, path: "/our-courses" },
+  { title: "BlockChain", id: 3, path: "/our-courses/blockchain-dev" },
+  { title: "Apply for incubation", id: 3, path: "/incubation" },
+
   //   { title: "FAQs", id: 5, path: "/faqs" },
   //   { title: "About Us", id: 6, path: "/about" },
 ];
@@ -60,7 +44,7 @@ const Navbar = () => {
               {navLists.map((navList) => (
                 <MenuItems items={navList} key={navList.id} />
               ))}
-              <li>
+              {/* <li>
                 <div />
                 <a href="#faqs">
                   FAQ<span>s</span>
@@ -69,8 +53,11 @@ const Navbar = () => {
               <li>
                 <div />
                 <a href="#about">About Us</a>
-              </li>
+              </li> */} 
             </ul>
+            <button className="navButton">
+                  <Link to="/incubation">Apply For Incubation</Link>  
+            </button>
           </div>
           <div className="navbarMenu">
             <FiMenu onClick={() => setToggle(true)} />
@@ -80,6 +67,7 @@ const Navbar = () => {
                 transition={{ duration: 0.85, ease: "easeOut" }}
                 className="toggleMenu"
               >
+                
                 <div>
                   <GrClose onClick={() => setToggle(false)} />
                 </div>
@@ -96,7 +84,9 @@ const Navbar = () => {
                             >
                               {navMenuItem.title}{" "}
                               <RiArrowDropDownLine className="menuArrow" />
+
                             </NavLink>
+
 
                             <aside
                               id="menuDropdown"
@@ -115,11 +105,15 @@ const Navbar = () => {
                                       {submenu.title}
                                     </NavLink>
                                   </li>
+
+                                  
                                 ))}
                               </ul>
                             </aside>
                           </li>
+                    
                         </>
+                        
                       ) : (
                         <>
                           <li onClick={() => setToggle(false)}>
@@ -128,16 +122,19 @@ const Navbar = () => {
                               {navMenuItem.title}
                             </NavLink>
                           </li>
+                          {/* <button>Apply For Incubation</button> */}
+
+
                         </>
                       )}
                     </>
                   ))}
-                  <li onClick={() => setToggle(false)}>
+                  {/* <li onClick={() => setToggle(false)}>
                     <a href="#faqs">FAQs</a>
                   </li>
                   <li onClick={() => setToggle(false)}>
                     <a href="#about">About Us</a>
-                  </li>
+                  </li> */}
                 </ul>
               </motion.div>
             )}
