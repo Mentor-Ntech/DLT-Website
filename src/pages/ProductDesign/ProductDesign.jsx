@@ -1,10 +1,10 @@
-const ProductDesign = () => {
+import { ProductDesign } from "../../component";
+const Productdesign = () => {
   return (
     <>
-    {/* Just to see the page */}
-      <h6 style={{ paddingTop: "155px" }}>Product Design</h6>
+      <ProductDesign />
     </>
   );
 };
 
-export default ProductDesign;
+export default Productdesign;

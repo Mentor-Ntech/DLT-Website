@@ -12,35 +12,8 @@ const sectionData = [
     button1: "Apply Now",
     button2: "Speak To A Learning Advisor",
     headline: "Applications are currently Open!",
-    img: require("../../assets/course-sec.png"),
+    img: require("../../assets/BlockchainHero.png"),
   },
-  // {
-  //     id: 2,
-  //     title:"UI/UX Design and Prototyping (Product Design)",
-  //     text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
-  //     button1: "Apply Now",
-  //     button2: "Speak To A Learning Advisor",
-  //     headline: "Applications are currently Open!",
-  //     imgUrl: require("../../assets/course-sec.png")
-  // },
-  // {
-  //     id: 3,
-  //     title:"Frontend Web Development",
-  //     text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
-  //     button1: "Apply Now",
-  //     button2: "Speak To A Learning Advisor",
-  //     headline: "Applications are currently Open!",
-  //     imgUrl: require("../../assets/course-sec.png")
-  // },
-  // {
-  //     id: 4,
-  //     title:"Blockchain Development (Smart Contract)",
-  //     text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
-  //     button1: "Apply Now",
-  //     button2: "Speak To A Learning Advisor",
-  //     headline: "Applications are currently Open!",
-  //     imgUrl: require("../../assets/course-sec.png")
-  // },
 ];
 
 const BlockChain = () => {

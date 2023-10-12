@@ -11,7 +11,7 @@ import {
   Blockchain,
   Frontend,
   Fullstack,
-  ProductDesign,
+  Productdesign,
 } from "./pages";
 import Home from "./Home/Home";
 import { Layout, HomeLayout, CoursesLayout } from "./component/index";
@@ -44,7 +44,7 @@ const App = () => {
             <Route
               exact
               path="/our-courses/product-design"
-              element={<ProductDesign />}
+              element={<Productdesign />}
             />
             <Route
               exact

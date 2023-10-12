@@ -9,7 +9,8 @@ import Shola from "../assets/Shola.webp";
 import Soliu from "../assets/Soliu.webp";
 import step from "../assets/step.png";
 import dltlogo from "../assets/dlt-logo.png";
-//import courseSec from "../assets/course-sec.png";
+import dltlogo2 from "../assets/dlt-logo2.png";
+
 
 
 export default {
@@ -20,9 +21,9 @@ export default {
   hero,
   Naheem,
   Seyi,
-  Shola,
+  Shola, 
   Soliu,
   step,
   dltlogo,
-  // courseSec
+  dltlogo2,
 };

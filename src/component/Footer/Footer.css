@@ -1,7 +1,10 @@
-.footer {
+/* .footer {
   background-color: var(--black-color);
   padding: 5rem 3rem;
+
 }
+
+
 .footer .footCon {
   display: flex;
   align-items: center;
@@ -172,4 +175,4 @@
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
   }
-}/*# sourceMappingURL=Footer.css.map */
+} */

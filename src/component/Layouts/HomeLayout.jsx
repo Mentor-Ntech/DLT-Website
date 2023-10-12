@@ -1,14 +1,13 @@
 import { Outlet } from "react-router-dom";
-import { FAQs, Navbar, Footer, CourseSections } from "../index";
+import { FAQs, Navbar, Footer } from "../index";
 
 const HomeLayout = () => {
   return (
     <>
       <Navbar />
       <Outlet />
-      <CourseSections />
-      <FAQs />
-      <Footer />
+      {/* <FAQs /> */}
+      {/* <Footer /> */}
     </>
   );
 };
