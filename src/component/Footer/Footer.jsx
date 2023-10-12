@@ -3,9 +3,7 @@ import { images } from "../../images";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
 import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from "react-icons/ai";
-import { Link, NavLink } from "react-router-dom";
 import MenuItems from "../Navbar/MenuItems";
-import { useState } from "react";
 
 const quickLinks = [
   // { title: "About Us", url: "#" },
@@ -45,13 +43,13 @@ const Footer = () => {
   return (
     <footer className="footer container">
       <div className="footerBox">
-        <div className="dltLogo">
+        <div className="dltLogo item">
           <a href="/">
             <img src={images.dltlogo2} alt="dlt-footer img" />
             <p className="footerText">...innovating through web3</p>
           </a>
         </div>
-        <div className="missionCon">
+        <div className="missionCon items">
           <h2 className="mission">Our Mission</h2>
 
           <p className="missionText">
@@ -61,7 +59,7 @@ const Footer = () => {
             mattis.
           </p>
         </div>
-        <div className="quickCon">
+        <div className="quickCon items">
           <h2 className="quick">Quick Links</h2>
           <ul className="quickText">
             {quickLinks.map((quickLink) => {
@@ -91,13 +89,13 @@ const Footer = () => {
             
           </ul>
         </div>
-        <div className="contact">
+        <div className="contact items">
           <div className="contactCon">
             <h2 className="contactText">Contact Us:</h2>
             <div className="contactInfo">
               <p className="offAddress">
                 2, Sheikh Zakariyah Adebayo Yusuf Street, <br /> PEGAMUT,
-                102112, Ota, Ogun State
+                102112, Ota, Ogun State.
               </p>
               <a
                 href="mailto:info@dltafrica.io"
