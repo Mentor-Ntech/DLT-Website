@@ -1,4 +1,5 @@
 import { FullstackDetails, FullstackHero } from "../../component";
+import FullstackFaq from "../../component/CourseDropdown/FullstackFaq";
 
 
 const Fullstack = () => {
@@ -6,6 +7,7 @@ const Fullstack = () => {
     <>
       <FullstackHero />
       <FullstackDetails />
+      <FullstackFaq />
     </>
   );
 };

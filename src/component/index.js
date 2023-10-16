@@ -1,6 +1,6 @@
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as CourseDetails} from "./CourseDetails/ProductDesignDetails";
-export {default as CourseDropdowns} from "./CourseDropdown/CourseDropdowns"
+export {default as CourseDropdowns} from "./CourseDropdown/FullstackFaq"
 export { default as Footer } from "./Footer/Footer";
 export { default as FAQs } from "./FAQ/FAQs";
 export { default as HomeLayout } from "./Layouts/HomeLayout";

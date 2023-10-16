@@ -1,10 +1,7 @@
 .cdd {
-  // text-decoration: none;
   cursor: pointer;
   color: var(white);
-  // background-color: blue;
   padding: 1rem;
-  // margin: 1rem 3rem;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -31,10 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 1rem;
 
     svg {
-      // background-color: var(--light-secondary-color);
       font-size: 22px;
 
       @media screen and (min-width: 2000px) {
@@ -102,8 +97,8 @@
 }
 
 .cdds {
-  margin: 5rem 3rem;
   height: auto;
+  background-color: #eeffef;
 
   .btn {
     display: flex;
@@ -137,23 +132,11 @@
     justify-content: center;
     height: auto;
   }
-
-  @media screen and (max-width: 540px) {
-    margin: 3rem 1rem;
-  }
 }
 
 .cddsWrapper {
   width: 100%;
-  margin: 0;
-  background-color: #eeffef;
   padding: 94.5px 195px 94.5px 196px;
-  justify-content: center;
-  align-items: center;
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // gap: 1.5rem 5rem;
-  // align-items: flex-start;
 
   @media screen and (max-width: 912px) {
     padding: 94.5px 4rem 94.5px 4rem;

@@ -1,7 +1,5 @@
-import React from "react";
 import CourseDropdown from "./CourseDropdown";
 import { Link } from "react-router-dom";
-// import "./CourseDropdowns.scss";
 
 const cddsData = [
   {
@@ -60,9 +58,9 @@ const cddsData = [
     },
   ];
 
-  const CourseDropdowns = () => {
+  const FullstackFaq = () => {
     return (
-        <section className="cdds container" id="cdds">
+        <section className="cdds" id="cdds">
           <div className="cddsWrapper">
             {cddsData.map(({ question, answer, id }) => (
               <CourseDropdown key={id} question={question} answer={answer} />
@@ -70,11 +68,11 @@ const cddsData = [
           </div>
           <div className="btn">
             <Link className="a" to="/training">
-              Apply Now
+              Get Started
             </Link>
           </div>
         </section>
       );
 }
 
-export default CourseDropdowns;
+export default FullstackFaq;
