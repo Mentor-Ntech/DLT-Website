@@ -53,10 +53,8 @@ const Footer = () => {
           <h2 className="mission">Our Mission</h2>
 
           <p className="missionText">
-            Worem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-            Nunc vulputate libero et velit interdum, ac aliquet odio
-            mattis.
+          To help build Web3 talents from ground zero, 
+          through full-stack and smart contract developments.
           </p>
         </div>
         <div className="quickCon items">

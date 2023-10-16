@@ -20,7 +20,7 @@ const secData = [
   {
     id: 2,
     title: "Start Date",
-    text: "8th January, 2023",
+    text: "8th January, 2024",
     icon: <ImHourGlass />
   },
   {

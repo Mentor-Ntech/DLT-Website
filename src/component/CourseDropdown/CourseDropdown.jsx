@@ -14,6 +14,9 @@ const CourseDropdown = ({ question, answer }) => {
           <li>{ordered.pointTwo}</li>
           <li>{ordered.pointThree}</li>
           <li>{ordered.pointFour}</li>
+          <li>{ordered.pointFive}</li>
+          <li>{ordered.pointSix}</li>
+          <li>{ordered.pointSeven}</li>
         </ol>
       </div>
     );

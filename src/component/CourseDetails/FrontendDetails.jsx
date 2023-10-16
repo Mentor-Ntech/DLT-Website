@@ -12,7 +12,7 @@ const secData = [
   {
     id: 1,
     title: "Duration",
-    text: "6 months",
+    text: "4 months",
     text2: "(4times in a week)",
     icon: <IoIosApps/>
 
@@ -20,7 +20,7 @@ const secData = [
   {
     id: 2,
     title: "Start Date",
-    text: "8th January, 2023",
+    text: "8th January, 2024",
     icon: <ImHourGlass />
   },
   {
@@ -38,13 +38,13 @@ const secData = [
   {
     id: 5,
     title: "Projects",
-    text: "5 Projects",
+    text: "4 Projects",
     icon: <BsLayoutWtf/>
   },
   {
     id: 6,
     title: "cost",
-    text: " ₦570,000",
+    text: " ₦370,000",
     icon: <CgBrowser/>
   },
 

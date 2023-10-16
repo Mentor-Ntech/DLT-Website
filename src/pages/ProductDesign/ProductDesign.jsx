@@ -1,4 +1,5 @@
 import { ProductDesignDetails, ProductDesignHero } from "../../component";
+import ProductDesignFaq from "../../component/CourseDropdown/ProductDesignFaq";
 
 
 const ProductDesign = () => {
@@ -6,6 +7,7 @@ const ProductDesign = () => {
     <>
       <ProductDesignHero />
       <ProductDesignDetails />
+      <ProductDesignFaq />
     </>
   );
 };

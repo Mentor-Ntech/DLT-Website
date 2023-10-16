@@ -12,15 +12,15 @@ const secData = [
   {
     id: 1,
     title: "Duration",
-    text: "6 months",
-    text: "(4times a week)",
-    icon:  <ImHourGlass />
+    text: "3 months",
+    text: "(3times a week)",
+    icon:  < SlCalender/>
   },
   {
     id: 2,
     title: "Start Date",
-    text: "8th January, 2023",
-    icon: <SlCalender />
+    text: "5th February, 2024",
+    icon: < ImHourGlass/>
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const secData = [
   {
     id: 6,
     title: "cost",
-    text: " ₦570,000",
+    text: "Free",
     icon: <CgBrowser/>
   },
 
