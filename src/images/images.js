@@ -9,9 +9,6 @@ import Shola from "../assets/Shola.webp";
 import Soliu from "../assets/Soliu.webp";
 import step from "../assets/step.png";
 import dltlogo from "../assets/dlt-logo.png";
-import dltlogo2 from "../assets/dlt-logo2.png";
-
-
 
 export default {
   Bola,
@@ -21,9 +18,8 @@ export default {
   hero,
   Naheem,
   Seyi,
-  Shola, 
+  Shola,
   Soliu,
   step,
   dltlogo,
-  dltlogo2,
 };
