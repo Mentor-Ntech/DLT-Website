@@ -11,10 +11,11 @@ import {
   Blockchain,
   Frontend,
   Fullstack,
-  Productdesign,
+  ProductDesign,
 } from "./pages";
 import Home from "./Home/Home";
 import { Layout, HomeLayout, CoursesLayout } from "./component/index";
+import Productdesign from "./pages/ProductDesign/ProductDesign";
 
 const App = () => {
   return (
@@ -44,7 +45,7 @@ const App = () => {
             <Route
               exact
               path="/our-courses/product-design"
-              element={<Productdesign />}
+              element={<ProductDesign />}
             />
             <Route
               exact
