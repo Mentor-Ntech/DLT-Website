@@ -1,8 +1,6 @@
-import React from "react";
-import CourseSection from "./CourseSection";
-// import courseImg from "../../assets/course-sec.png";
+import CourseHeroSect from "./CourseHeroSect";
 
-import "./CourseSections.scss";
+import "./CourseHeroSect.scss";
 
 const sectionData = [
   {
@@ -16,14 +14,14 @@ const sectionData = [
   },
 ];
 
-const ProductDesign = () => {
+const ProductDesignHero = () => {
   return (
     <section className="course" id="course">
       <>
         <div>
           {sectionData.map(
             ({ title, text, button1, button2, headline, id, img }) => (
-              <CourseSection
+              <CourseHeroSect
                 key={id}
                 title={title}
                 text={text}
@@ -40,4 +38,4 @@ const ProductDesign = () => {
   );
 };
 
-export default ProductDesign;
+export default ProductDesignHero;

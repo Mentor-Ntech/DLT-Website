@@ -1,8 +1,10 @@
-import { FrontEnd } from "../../component";
+import { FrontendDetails, FrontendHero } from "../../component";
+
 const Frontend = () => {
   return (
     <>
-      <FrontEnd />
+      <FrontendHero />
+      <FrontendDetails />
     </>
   );
 };

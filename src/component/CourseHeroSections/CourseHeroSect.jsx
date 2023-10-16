@@ -1,31 +1,9 @@
-import "./CourseSections.scss";
+import "./CourseHeroSect.scss";
 import { Link } from "react-router-dom";
 
-const CourseSection = (props) => {
+const CourseHeroSect = (props) => {
   return (
     <>
-      {/* <div className="courseCon">
-      <div className="courseBody">
-        <div className="cousersBox">
-          <h4>{props.title}</h4>
-          <p>{props.text}</p>
-          <div className="btn">
-            <Link className="btn1" to="/training">
-              Apply Now
-            </Link>
-
-            <button className="btn2">{props.button2}</button>
-          </div>
-
-         
-        </div>
-      </div>
-
-      {/* <div className="imageBox">
-        
-      </div> 
-    </div> */}
-
       <section className="coursesCon">
         <div className="course__content">
           <div className="coursesTextBox flex-items">
@@ -51,4 +29,4 @@ const CourseSection = (props) => {
   );
 };
 
-export default CourseSection;
+export default CourseHeroSect;

@@ -1,10 +1,13 @@
-import { ProductDesign } from "../../component";
-const Productdesign = () => {
+import { ProductDesignDetails, ProductDesignHero } from "../../component";
+
+
+const ProductDesign = () => {
   return (
     <>
-      <ProductDesign />
+      <ProductDesignHero />
+      <ProductDesignDetails />
     </>
   );
 };
 
-export default Productdesign;
+export default ProductDesign;

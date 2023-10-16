@@ -1,9 +1,11 @@
-import { FullStack } from "../../component";
+import { FullstackDetails, FullstackHero } from "../../component";
+
 
 const Fullstack = () => {
   return (
     <>
-      <FullStack />
+      <FullstackHero />
+      <FullstackDetails />
     </>
   );
 };

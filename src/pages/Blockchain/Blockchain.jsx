@@ -1,8 +1,10 @@
-import { BlockChain } from "../../component";
+import { BlockchainDetails, BlockchainHero } from "../../component";
+
 const Blockchain = () => {
   return (
     <>
-      <BlockChain />
+      <BlockchainHero />
+      <BlockchainDetails />
     </>
   );
 };

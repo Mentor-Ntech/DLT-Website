@@ -1,28 +1,28 @@
-import CourseSection from "./CourseSection";
-// import courseImg from "../../assets/course-sec.png";
+import React from "react";
+import CourseHeroSect from "./CourseHeroSect";
 
-import "./CourseSections.scss";
+import "./CourseHeroSect.scss";
 
 const sectionData = [
   {
-    id: 1,
-    title: "Full-Stack Web Development",
+    id: 4,
+    title: "Blockchain Development (Smart Contract)",
     text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
     button1: "Apply Now",
     button2: "Speak To A Learning Advisor",
     headline: "Applications are currently Open!",
-    img: require("../../assets/FullstackHero.png"),
+    img: require("../../assets/BlockchainHero.png"),
   },
 ];
 
-const FullStack = () => {
+const BlockchainHero = () => {
   return (
     <section className="course" id="course">
       <>
         <div>
           {sectionData.map(
             ({ title, text, button1, button2, headline, id, img }) => (
-              <CourseSection
+              <CourseHeroSect
                 key={id}
                 title={title}
                 text={text}
@@ -39,4 +39,4 @@ const FullStack = () => {
   );
 };
 
-export default FullStack;
+export default BlockchainHero;

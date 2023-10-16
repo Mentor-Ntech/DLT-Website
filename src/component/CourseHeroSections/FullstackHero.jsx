@@ -1,29 +1,27 @@
-import React from "react";
-import CourseSection from "./CourseSection";
-// import courseImg from "../../assets/course-sec.png";
+import CourseHeroSect from "./CourseHeroSect";
 
-import "./CourseSections.scss";
+import "./CourseHeroSect.scss";
 
 const sectionData = [
   {
-    id: 3,
-    title: "Frontend Web Development",
+    id: 1,
+    title: "Full-Stack Web Development",
     text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
     button1: "Apply Now",
     button2: "Speak To A Learning Advisor",
     headline: "Applications are currently Open!",
-    img: require("../../assets/FrontendHero.png"),
+    img: require("../../assets/FullstackHero.png"),
   },
 ];
 
-const FrontEnd = () => {
+const FullstackHero = () => {
   return (
     <section className="course" id="course">
       <>
         <div>
           {sectionData.map(
             ({ title, text, button1, button2, headline, id, img }) => (
-              <CourseSection
+              <CourseHeroSect
                 key={id}
                 title={title}
                 text={text}
@@ -40,4 +38,4 @@ const FrontEnd = () => {
   );
 };
 
-export default FrontEnd;
+export default FullstackHero;
