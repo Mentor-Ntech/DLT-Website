@@ -146,14 +146,14 @@
     }
   }
 
-  .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-
   @media screen and (max-width: 280px) {
     padding: 6rem 1.5rem 2rem;
   }
+}
+
+.loading {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin: 3rem;
 }
