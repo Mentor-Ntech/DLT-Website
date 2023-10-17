@@ -4,7 +4,7 @@ import CourseDetail from './CourseDetail'
 import { IoIosApps } from "react-icons/io";
 import { ImHourGlass } from "react-icons/im";
 import { SlCalender } from "react-icons/sl";
-import { AiOutlineMenu } from "react-icons/ai";
+import { BsListUl } from "react-icons/bs";
 import { BsLayoutWtf } from "react-icons/bs";
 import { CgBrowser } from "react-icons/cg";
 
@@ -14,26 +14,28 @@ const secData = [
     title: "Duration",
     text: "4 months",
     text2: "(4times in a week)",
-    icon: <IoIosApps/>
+    icon: <ImHourGlass />
+    
 
   },
   {
     id: 2,
     title: "Start Date",
     text: "8th January, 2024",
-    icon: <ImHourGlass />
+    icon: <SlCalender />
+    
   },
   {
     id: 3,
-    title: "level",
+    title: "Level",
     text: "Beginner",
-    icon: <SlCalender />
+    icon: <IoIosApps/>
   },
   {
     id: 4,
-    title: "Presecutive",
+    title: "Prerequisites",
     text: "Laptop",
-    icon: <AiOutlineMenu/>
+    icon: <BsListUl/>
   },
   {
     id: 5,
@@ -43,7 +45,7 @@ const secData = [
   },
   {
     id: 6,
-    title: "cost",
+    title: "Cost",
     text: " ₦370,000",
     icon: <CgBrowser/>
   },

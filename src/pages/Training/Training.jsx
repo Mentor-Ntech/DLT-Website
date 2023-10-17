@@ -329,6 +329,21 @@ const Training = () => {
                     {errors.exp?.message}
                   </p>
                 </div>
+                <div>
+                <label htmlFor="exp">Course Apply</label>
+                  <select name="exp" id="exp" {...register("exp")}>
+                    
+                    <option value="">select an option</option>
+
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Mid-Level">Mid-Level</option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="No experience">No experience</option>
+                  </select>
+                  <p className={`${errors.exp ? "instruction" : "offscreen"}`}>
+                    {errors.exp?.message}
+                  </p>
+                </div>
               </article>
 
               <aside>

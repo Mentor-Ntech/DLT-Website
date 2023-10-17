@@ -6,7 +6,7 @@ const cddsData = [
     id: 1,
     question: "About this Course",
     answer: {
-      pOne:"Frontend development is the process of creating the user interface and user experience of a website. It's what users see and interact with when they visit a site in a web browser. The frontend, also known as the 'client-side,' focuses on the visual and interactive elements of a website"
+      pOne:"The course is designed to provide a comprehensive introduction to Ethereum smart contract development. Students will learn how to develop and deploy smart contracts on the Ethereum blockchain using the Solidity programming language. They will also learn how to interact with smart contracts using web3.js and other Ethereum development tools."
     },
   },
   {
@@ -26,10 +26,11 @@ const cddsData = [
     {
       id: 3,
       question: "Prerequisites",
+      
       answer:{
         unordered:{
           point_one:'A computer on which you can install software (Windows, MacOS, or Linux)',
-          point_two:'6 Months to learn and work hard to build a career in tech.',
+          point_two:'4 Months to learn and work hard to build a career in tech.',
           point_three:'No prior programming experience is required. We will start from the very basics'
         }
       },
@@ -40,11 +41,12 @@ const cddsData = [
       question: "Course Outline",
       answer:{
         unordered:{
-          point_one:'HTML Basics',
-          point_two:'CSS Styling.',
-          point_three:'JavaScript Fundamentals',
-          point_four: 'Introduction to React ',
-          point_five: 'Students will build different projects and create a portfolio that be used to their first job'
+          point_one:'Introduction to Ethereum',
+          point_two:'Setting up the Development Environment',
+          point_three:"Writing Solidity Contracts & Deploying Contracts",
+          point_four: 'Interacting with Contract & Advanced Contract Topics',
+          point_five: 'Security and Best Practices',
+          point_six: 'Final Project'
         }   
       }
     },
@@ -53,7 +55,7 @@ const cddsData = [
       question: "Class Schedule",
       answer: {
         unordered:{
-          point_one:'Days of Class: Mondays, Tuesdays, Wednesdays and Thursdays.'
+          point_one:'Days of Class: Wednesdays, fridays and saturdays.'
         }
       },
     },

@@ -13,8 +13,9 @@ const cddsData = [
     id: 2,
     question: "What you will Learn",
     answer:{
+      subHeading: "Are you ready to embark on an exciting journey into the world of product design? Our comprehensive Product Design Course is designed to equip you with the knowledge, skills, and tools necessary to excel in this dynamic field. Here's a glimpse of what you can expect to learn during this engaging course:",
         unordered:{
-          point_one:'Are you ready to embark on an exciting journey into the world of product design? Our comprehensive Product Design Course is designed to equip you with the knowledge, skills, and tools necessary to excel in this dynamic field. Here is a glimpse of what you can expect to learn during this engaging course:',
+          //point_one:'Are you ready to embark on an exciting journey into the world of product design? Our comprehensive Product Design Course is designed to equip you with the knowledge, skills, and tools necessary to excel in this dynamic field. Here is a glimpse of what you can expect to learn during this engaging course:',
           point_two:'Understanding the Fundamentals',
           point_three:'Design Research and User Analysis',
           point_four:'Ideation and Concept Development',
@@ -27,7 +28,9 @@ const cddsData = [
     {
       id: 3,
       question: "Prerequisites",
+      
       answer:{
+        
         unordered:{
           point_one:'A computer on which you can install software (Windows, MacOS, or Linux)',
           point_two:'No prior programming experience is required. We will start from the very basics'
@@ -58,12 +61,12 @@ const cddsData = [
     },
   ];
 
-  const ProductDesignFaq = () => {
+  const  ProductDesignFaq= () => {
     return (
         <section className="cdds" id="cdds">
           <div className="cddsWrapper">
-            {cddsData.map(({ question, answer, id }) => (
-              <CourseDropdown key={id} question={question} answer={answer} />
+            {cddsData.map(({ question, subHeading, answer, id }) => (
+              <CourseDropdown key={id} question={question} answer={answer} subHeading={subHeading} />
             ))}
           </div>
           <div className="btn">

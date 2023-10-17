@@ -6,7 +6,7 @@ const sectionData = [
   {
     id: 2,
     title: "UI/UX Design and Prototyping (Product Design)",
-    text: "Acquire the skills and knowledge needed build a complete web development project from scratch to finish. Our Full-Stack Developer’s Program is a 6 months program.",
+    text: "User Interface(UI) and User Experience(UX) design are in great demand and are applicable across products and industry domains. With customer experience being the centerfold of product marketing, companies are focusing on enhancing the interface that their customers have access to.",
     button1: "Apply Now",
     button2: "Speak To A Learning Advisor",
     headline: "Applications are currently Open!",

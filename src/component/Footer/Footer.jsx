@@ -2,7 +2,8 @@ import "./Footer.scss";
 import { images } from "../../images";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaInstagram } from "react-icons/fa";
-import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import MenuItems from "../Navbar/MenuItems";
 
 const quickLinks = [
@@ -18,12 +19,12 @@ const footMenuItems = [
 
 const socials = [
   {
-    icon: <AiFillFacebook />,
+    icon: <BsFacebook />,
     link: "https://www.facebook.com/DLTAfrica",
   },
   {
     icon: <FaInstagram />,
-    link: "https://www.linkedin.com/company/dlt-africa/",
+    link: "https://www.instagram.com/dlta_frica/",
   },
   {
     icon: <AiFillLinkedin />,

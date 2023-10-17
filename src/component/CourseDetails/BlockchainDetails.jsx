@@ -3,7 +3,7 @@ import "./CourseDetails.scss";
 import CourseDetail from './CourseDetail'
 import { ImHourGlass } from "react-icons/im";
 import { IoIosApps } from "react-icons/io";
-import { AiOutlineMenu } from "react-icons/ai";
+import { BsListUl } from "react-icons/bs";
 import { BsLayoutWtf } from "react-icons/bs";
 import { CgBrowser } from "react-icons/cg";
 import { SlCalender } from "react-icons/sl";
@@ -14,35 +14,35 @@ const secData = [
     title: "Duration",
     text: "3 months",
     text: "(3times a week)",
-    icon:  < SlCalender/>
+    icon: <ImHourGlass />
   },
   {
     id: 2,
     title: "Start Date",
     text: "5th February, 2024",
-    icon: < ImHourGlass/>
+    icon: <SlCalender />
   },
   {
     id: 3,
-    title: "level",
+    title: "Level",
     text: "Beginner",
-    icon: <BsLayoutWtf />
+    icon: <IoIosApps/>
   },
   {
     id: 4,
-    title: "Presecutive",
+    title: "Prerequisites",
     text: "Laptop",
-    icon: <AiOutlineMenu/>
+    icon: <BsListUl/>
   },
   {
     id: 5,
     title: "Projects",
-    text: "5 Projects",
+    text: "2 Projects",
     icon: <IoIosApps/>
   },
   {
     id: 6,
-    title: "cost",
+    title: "Cost",
     text: "Free",
     icon: <CgBrowser/>
   },

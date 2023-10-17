@@ -36,7 +36,7 @@
 
   .mission {
     color: #1d700e;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -45,7 +45,7 @@
 
   .missionText {
     color: #eeffef;
-    font-family: Source Sans Pro;
+    font-family: "Source Sans Pro";
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -64,7 +64,7 @@
 
   .quick {
     color: #1d700e;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -83,7 +83,7 @@
 
   .contactText {
     color: #1d700e;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -285,7 +285,7 @@
     list-style: none;
     height: 45px;
     width: 45px;
-    color: black;
+    // color: rgb(105, 16, 16);
     border-radius: 50%;
     transition: all 0.8s ease-out;
     -webkit-border-radius: 50%;
@@ -299,6 +299,7 @@
 
     
   }
+
 
   .dltLogo {
     display: flex;

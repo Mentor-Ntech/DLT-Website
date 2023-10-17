@@ -12,8 +12,8 @@ const Header = () => {
           <span> Ground Zero To Market-Fit Product.</span>
         </h1>
         <div className="applyBtn">
-          <Link className="btn genBtn" to="/training">
-            Apply For Training
+          <Link className="btn genBtn" to="/our-courses">
+            Get Started
           </Link>
           <Link className="btn genBtn" to="/incubation">
             Apply For Incubation
