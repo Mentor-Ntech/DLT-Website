@@ -45,9 +45,9 @@ const data = [
     title: "Blockchain Development (Smart Contract)",
     text: "Acquire the skills and knowledge needed to be a Blockchain Developer",
     durationIcon: <FiCalendar />,
-    duration: "Not yet decided",
+    duration: "3 Months",
     classDurationIcon: <BiHourglass />,
-    classDuration: "Weekends",
+    classDuration: "2 times a week",
   },
 ];
 
