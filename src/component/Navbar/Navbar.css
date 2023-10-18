@@ -5,8 +5,6 @@
   padding: 0 1rem;
   position: fixed;
   z-index: 2;
-  background: #D94F70;
-
 }
 .navbar .navbarCon {
   display: flex;
@@ -40,7 +38,7 @@
 .navbar .navbarItems .navbarItemsLinks ul {
   list-style: none;
   margin-right: 3rem;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 .navbar .navbarItems .navbarItemsLinks ul a {
   transition: all 0.5s ease-in-out;
