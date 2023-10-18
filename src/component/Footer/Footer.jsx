@@ -1,6 +1,7 @@
 import "./Footer.scss";
 import { images } from "../../images";
-import { AiOutlineTwitter } from "react-icons/a
+import { AiOutlineTwitter } from "react-icons/ai";
+<<<<<<< HEAD
 import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
 
 const socials = [
@@ -11,6 +12,32 @@ const socials = [
   {
     icon: <AiFillFacebook />,
     link: "https://www.facebook.com/DLTAfrica",
+=======
+import { FaInstagram } from "react-icons/fa";
+import { BsFacebook } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import MenuItems from "../Navbar/MenuItems";
+
+const quickLinks = [
+  // { title: "About Us", url: "#" },
+  { title: "Our Team", url: "/team" },
+  // { title: "FAQs", url: "#" },
+];
+
+const footMenuItems = [
+  { title: "Home", id: 1, path: "/" },
+  { title: "Our Team", id: 2, path: "/team" },
+];
+
+const socials = [
+  {
+    icon: <BsFacebook />,
+    link: "https://www.facebook.com/DLTAfrica",
+  },
+  {
+    icon: <FaInstagram />,
+    link: "https://www.instagram.com/dlta_frica/",
+>>>>>>> origin/Staging
   },
   {
     icon: <AiFillLinkedin />,
@@ -45,6 +72,23 @@ const Footer = () => {
           </div>
           <div className="reachOut">
             <h5>Follow DLTAfrica:</h5>
+
+<<<<<<< HEAD
+            <div className="footerIcon">
+              <ul className="item">
+                {socials.map((social, i) => (
+                  <li key={i} className="itemLink">
+                    <a
+                      href={social.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {social.icon}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+=======
           <p className="missionText">
           To help build Web3 talents from ground zero, 
           through full-stack and smart contract developments.
@@ -105,6 +149,7 @@ const Footer = () => {
                 <span>Phone number:</span>
                 <small> +234 815 650 9701</small>
               </a>
+>>>>>>> origin/Staging
             </div>
           </div>
         </div>
