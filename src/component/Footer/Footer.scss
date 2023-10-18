@@ -2,6 +2,7 @@
   background-color: var(--black-color);
   padding: 5rem 3rem;
 
+<<<<<<< HEAD
   @media screen and (min-width: 2000px) {
     width: 100vw;
     font-size: 45px;
@@ -10,6 +11,181 @@
   @media screen and (max-width: 360px) {
     width: 100%;
     overflow: hidden;
+=======
+  .footerBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 1024px) {
+      gap: 41px;
+    }
+
+    @media screen and (min-width: 540px) {
+      row-gap: 85px;
+    }
+
+    .items {
+      flex-grow: 1;
+      flex-basis: 200;
+    }
+  }
+
+  .missionCon {
+    display: flex;
+    width: 291px;
+    align-items: center;
+    align-content: center;
+    gap: 21px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+  }
+
+  .mission {
+    color: #1d700e;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .missionText {
+    color: #eeffef;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .quickCon {
+    display: flex;
+    width: 145px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+    flex-shrink: 0;
+
+    ul {
+      color: #eeffef;
+      font-family: "Source Sans Pro";
+      text-decoration: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: 400;
+
+      li {
+        margin-right: 2rem;
+      }
+
+      div {
+        width: 10px;
+        height: 10px;
+
+        margin-bottom: 5px;
+        background: transparent;
+
+        border-radius: 50px;
+      }
+
+      a {
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1.3rem;
+
+        &:hover {
+          color: var(--white-color);
+          text-decoration: none;
+        }
+
+        @media screen and (min-width: 2000px) {
+          font-size: 2.3rem;
+        }
+      }
+
+      span {
+        text-transform: lowercase;
+      }
+
+      &:hover {
+        div {
+          background: var(--white-color);
+        }
+      }
+    }
+  }
+
+  .quick {
+    color: #1d700e;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .contactCon {
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 21px;
+    flex-shrink: 0;
+  }
+
+  .contactText {
+    color: #1d700e;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .contactInfo {
+    color: #eeffef;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .offAddress {
+    color: #eeffef;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 21px;
+  }
+
+  .contactInfo a,
+  :visited {
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  .contactInfo a:hover {
+    color: #bdfcc1;
+    text-decoration: none;
+>>>>>>> origin/Staging
   }
 
   .footCon {
@@ -40,6 +216,7 @@
       }
     }
 
+<<<<<<< HEAD
     .reachOut {
       margin-top: 3rem;
 
@@ -117,6 +294,28 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+=======
+  .footerIcon {
+    width: 85%;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 10rem;
+    border-top: 0.5px solid white;
+
+    @media screen and (max-width: 560px) {
+      width: 85%;
+      margin-left: 2.5rem;
+      margin-right: 7rem;
+    }
+  }
+
+  .item {
+    margin-top: 30px;
+    //  padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+>>>>>>> origin/Staging
   }
 
   .itemLink {
@@ -163,13 +362,14 @@
     background-color: #f4e7ea;
     height: 45px;
     width: 45px;
-    color: black;
+    // color: rgb(105, 16, 16);
     border-radius: 50%;
     transition: all 0.5s ease-in-out;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+<<<<<<< HEAD
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
@@ -199,6 +399,12 @@
     @media screen and (max-width: 900px) {
       display: none;
     }
+=======
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -ms-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+>>>>>>> origin/Staging
   }
 
   .dltLogo {

@@ -6,7 +6,7 @@ const faqsData = [
   {
     id: 1,
     question:
-      "What are the requirements to join the full stack software development training ?",
+      "What are the requirements to join the software development training ?",
     answer:
       "Anyone with burnig passion to build solution that solve real world use cases are eligible to join. We appreciate people who already have idea of what they are looking to build but we encourage everyone to apply.",
   },
@@ -20,7 +20,7 @@ const faqsData = [
     id: 3,
     question: "What are the key dates and how to apply for the training ?",
     answer:
-      "The training is a 6 months of full-time intensive in-person classes plus additional 3 months of capstone project. Everyone willing to apply can submit their application for consideration.",
+      "The training durations depend on the chosen course. Navigate to the courses page for more information."
   },
   {
     id: 4,

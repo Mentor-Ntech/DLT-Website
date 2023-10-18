@@ -6,8 +6,8 @@ const HomeLayout = () => {
     <>
       <Navbar />
       <Outlet />
-      <FAQs />
-      <Footer />
+      {/* <FAQs /> */}
+      {/* <Footer /> */}
     </>
   );
 };

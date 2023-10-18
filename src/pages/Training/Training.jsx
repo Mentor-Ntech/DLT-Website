@@ -360,7 +360,7 @@ const Training = () => {
 
               <div className="btnCon">
                 <button className="genBtn">
-                  {isLoading ? <Loader size="xs" content="Sending" /> : "Send"}
+                  {isLoading ? <Loader size="xs" content="Submitting" /> : "Submit"}
                 </button>
               </div>
             </form>
