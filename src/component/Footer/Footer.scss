@@ -60,6 +60,61 @@
     align-items: flex-start;
     gap: 21px;
     flex-shrink: 0;
+
+    ul {
+      color: #eeffef;
+      font-family: "Source Sans Pro";
+      text-decoration: none;
+      list-style: none;
+      font-size: 18px;
+      font-weight: 400;
+
+      li {
+        margin-right: 2rem;
+      }
+
+      div {
+        width: 10px;
+        height: 10px;
+
+        margin-bottom: 5px;
+        background: transparent;
+
+        border-radius: 50px;
+      }
+
+      a {
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1.3rem;
+
+        &:hover {
+          color: var(--white-color);
+          text-decoration: none;
+        }
+
+        @media screen and (min-width: 2000px) {
+          font-size: 2.3rem;
+        }
+      }
+
+      span {
+        text-transform: lowercase;
+      }
+
+      &:hover {
+        div {
+          background: var(--white-color);
+        }
+      }
+    }
   }
 
   .quick {
@@ -97,68 +152,6 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-
-  ul,
-  li {
-    color: #eeffef;
-    font-family: Source Sans Pro;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-    list-style: none;
-  }
-
-  li {
-    margin-right: 2rem;
-    font-family: Source Sans Pro;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    div {
-      width: 10px;
-      height: 10px;
-
-      margin-bottom: 5px;
-      background: transparent;
-
-      border-radius: 50px;
-    }
-
-    a {
-      transition: all 0.2s ease-in-out;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-
-      text-decoration: none;
-      color: white;
-      font-weight: 400;
-      font-size: 1.3rem;
-
-      &:hover {
-        color: var(--white-color);
-        text-decoration: none;
-      }
-
-      @media screen and (min-width: 2000px) {
-        font-size: 2.3rem;
-      }
-    }
-
-    span {
-      text-transform: lowercase;
-    }
-
-    &:hover {
-      div {
-        background: var(--white-color);
-      }
-    }
   }
 
   .offAddress {
@@ -224,9 +217,7 @@
       width: 85%;
       margin-left: 2.5rem;
       margin-right: 7rem;
-    
     }
-
   }
 
   .item {
@@ -235,9 +226,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
-   
   }
 
   .itemLink {
@@ -274,8 +262,6 @@
       height: 75px;
       width: 75px;
     }
-
-    
   }
 
   .itemLink:hover {
@@ -296,10 +282,7 @@
     -moz-transition: all 0.8s ease-out;
     -ms-transition: all 0.8s ease-out;
     -o-transition: all 0.8s ease-out;
-
-    
   }
-
 
   .dltLogo {
     display: flex;
